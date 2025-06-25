@@ -958,18 +958,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error("Canvas 'Haus' nicht gefunden");
   }
 });
-
-//Endergebnis Vergleich Posts
-// postsBarChart.js – Säulendiagramm „Posts pro Account“
-// Erstellt am: 25 Juni 2025
-// Dieses Skript kann zusammen mit weiteren Diagrammen in derselben Datei verwendet werden.
-// Es setzt voraus, dass Chart.js (v3 oder neuer) im Dokument eingebunden ist.
-
-/*
-┌──────────────────────────────────────────────────────────────┐
-│  Canvas‑Element im HTML: <canvas id="posts-bar-chart"></canvas> │
-└──────────────────────────────────────────────────────────────┘
-*/
+//Vergleichsstuff
 
 document.addEventListener('DOMContentLoaded', () => {
   const cvs = document.getElementById('posts-bar-chart');
@@ -978,9 +967,9 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  const ctx = cvs.getContext('2d');
+  const Vergleichctx = cvs.getContext('2d');
 
-  new Chart(ctx, {
+  new Chart(Vergleichctx, {
     type: 'bar',
     data: {
       labels: ['Trump', 'Musk', 'JD Vance', 'Weißes Haus'],
@@ -1032,7 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 //Timeline Likes
-const ctx = document.getElementById('timelineChart').getContext('2d');
+const Timelinectx = document.getElementById('timelineChart').getContext('2d');
 
 const labels = [
   'Juli', 'August', 'September', 'Oktober', 'November',
@@ -1066,7 +1055,7 @@ const zweiteAmtszeit = [
   53465.44348
 ];
 
-new Chart(ctx, {
+new Chart(Timelinectx, {
   type: 'line',
   data: {
     labels: labels,
