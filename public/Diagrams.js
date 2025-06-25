@@ -974,7 +974,7 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       labels: ['Trump', 'Musk', 'JD Vance', 'Weißes Haus'],
       datasets: [{
-        label: 'Anzahl kategorisierter Posts',
+        label: 'Anzahl kategorisierter Posts (20.01.2025-30.04.2025)',
         data: [702, 193, 27, 230],
         backgroundColor: [
           '#B22234', // Flag‑Rot
