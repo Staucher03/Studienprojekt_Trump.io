@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("navbar.html")
+  fetch("public/navbar.html")
     .then(res => {
       if (!res.ok) throw new Error("Navbar konnte nicht geladen werden");
       return res.text();
