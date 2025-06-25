@@ -1000,7 +1000,7 @@ document.addEventListener('DOMContentLoaded', () => {
       plugins: {
         title: {
           display: true,
-          text: 'Posts pro Account',
+          text: 'Posts pro Account (20.01.2025-30.04.2025)',
           font: { size: 18 }
         },
         tooltip: {
