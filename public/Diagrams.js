@@ -850,109 +850,111 @@ if (Trump1) {
 }
 
 // Diagramm - JD Vance
-function getTop6PlusOthers(labels, data, colors) {
-  const sorted = labels.map((l, i) => ({ l, v: data[i], c: colors[i] }))
-                       .sort((a, b) => b.v - a.v);
-  const top6   = sorted.slice(0, 6);
-  const others = sorted.slice(6);
-  const othersVal = others.reduce((s, o) => s + o.v, 0);
-  const othersCol = '#808080';
-
-  return {
-    labels : [...top6.map(o => o.l), 'Others'],
-    data   : [...top6.map(o => o.v), othersVal],
-    colors : [...top6.map(o => o.c), othersCol]
-  };
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-  const cvs = document.getElementById('Vance');
-  if (!cvs) { console.error("Canvas 'Vance' nicht gefunden"); return; }
-  const ctx = cvs.getContext('2d');
-
-  const rawLabels = [
-    'Anti-Minderheiten','Anti-Nachbarländer','Anti-Gewaltenteilung',
-    'Heilsbringer','Komplexes Thema --> Einfache Lösung','Angst- und Wutmache',
-    'Opferrolle','"Wir gegen Die"','Aufruf zur Veränderung'
-  ];
-  const rawData   = [4,2,2,9,5,9,9,20,1];
-  const rawColors = [        '#8B0000', // Dunkelrot (Burgundy)
-    '#B22234', // Dunkelrot
-    
-    '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
+  const BASE_COLORS = [
+    '#8B0000', '#B22234', '#FF4C4C', '#3C3B6E', '#5A5ACD', '#1E90FF',
     '#A9A9A9', '#6495ED', '#DC143C', '#00008B', '#B03060', '#4682B4',
     '#FF6347', '#0000CD', '#C71585', '#7B68EE', '#778899'
   ];
 
-  const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
+  function getTop6PlusOthers(labels, data) {
+    const sorted = labels.map((l, i) => ({ l, v: data[i] }))
+                         .sort((a, b) => b.v - a.v);
+    const top6 = sorted.slice(0, 6);
+    const others = sorted.slice(6);
+    const othersVal = others.reduce((s, o) => s + o.v, 0);
 
-  new Chart(ctx, {
-    type: 'pie',
-    data: { labels, datasets:[{ data, backgroundColor: colors, borderColor:'#fff', borderWidth:1, hoverOffset:20 }]},
-    options: {
-      responsive:true,
-      rotation:-Math.PI/2,
-      plugins:{
-        title:{display:true,text:'Kategorisierte Beiträge Vance',font:{size:18}},
-        legend:{position:'top',labels:{font:{size:14}}},
-        tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${ctx.parsed}`}}
+    return {
+      labels: [...top6.map(o => o.l), 'Others'],
+      data: [...top6.map(o => o.v), othersVal]
+    };
+  }
+
+  // JD Vance Diagramm
+  const cvsVance = document.getElementById('Vance');
+  if (cvsVance) {
+    const ctxVance = cvsVance.getContext('2d');
+    const rawLabelsVance = [
+      'Anti-Minderheiten','Anti-Nachbarländer','Anti-Gewaltenteilung',
+      'Heilsbringer','Komplexes Thema --> Einfache Lösung','Angst- und Wutmache',
+      'Opferrolle','"Wir gegen Die"','Aufruf zur Veränderung'
+    ];
+    const rawDataVance = [4, 2, 2, 9, 5, 9, 9, 20, 1];
+    const { labels, data } = getTop6PlusOthers(rawLabelsVance, rawDataVance);
+    const colors = labels.map((_, i) => i < 6 ? BASE_COLORS[i] : '#808080');
+
+    new Chart(ctxVance, {
+      type: 'pie',
+      data: {
+        labels,
+        datasets: [{
+          data,
+          backgroundColor: colors,
+          borderColor: '#fff',
+          borderWidth: 1,
+          hoverOffset: 20
+        }]
+      },
+      options: {
+        responsive: true,
+        rotation: -Math.PI / 2,
+        plugins: {
+          title: { display: true, text: 'Kategorisierte Beiträge Vance', font: { size: 18 } },
+          legend: { position: 'top', labels: { font: { size: 14 } } },
+          tooltip: {
+            callbacks: {
+              label: ctx => `${ctx.label}: ${ctx.parsed}`
+            }
+          }
+        }
       }
-    }
-  });
-});
+    });
+  } else {
+    console.error("Canvas 'Vance' nicht gefunden");
+  }
 
+  // Weißes Haus Diagramm
+  const cvsHaus = document.getElementById('Haus');
+  if (cvsHaus) {
+    const ctxHaus = cvsHaus.getContext('2d');
+    const rawLabelsHaus = [
+      'Anti-Minderheiten','Anti-Verfassung','Anti-Internationalisierung','Anti-Nachbarländer',
+      'Anti-Gewaltenteilung','Autokratieliebe','Anti-Wissenschaft','Für "einfache Bürger"',
+      'Heilsbringer','Komplexes Thema --> Einfache Lösung','Schwarz-Weiß-Denken',
+      'Angst- und Wutmache','Opferrolle','"Wir gegen Die"','Aufruf zur Veränderung',
+      'Herunterspielen und Diskreditieren der Gegner:innen'
+    ];
+    const rawDataHaus = [59,8,8,2,7,16,6,111,158,29,9,17,9,19,40,32];
+    const { labels, data } = getTop6PlusOthers(rawLabelsHaus, rawDataHaus);
+    const colors = labels.map((_, i) => i < 6 ? BASE_COLORS[i] : '#808080');
 
-// Diagramm - Weißes Haus
-function getTop6PlusOthers(labels, data, colors) {
-  const sorted = labels.map((l, i) => ({ l, v: data[i], c: colors[i] }))
-                       .sort((a, b) => b.v - a.v);
-  const top6   = sorted.slice(0, 6);
-  const others = sorted.slice(6);
-  const othersVal = others.reduce((s, o) => s + o.v, 0);
-  const othersCol = '#808080';
-
-  return {
-    labels : [...top6.map(o => o.l), 'Others'],
-    data   : [...top6.map(o => o.v), othersVal],
-    colors : [...top6.map(o => o.c), othersCol]
-  };
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const cvs = document.getElementById('Haus');
-  if (!cvs) { console.error("Canvas 'Haus' nicht gefunden"); return; }
-  const ctx = cvs.getContext('2d');
-
-  const rawLabels = [
-    'Anti-Minderheiten','Anti-Verfassung','Anti-Internationalisierung','Anti-Nachbarländer',
-    'Anti-Gewaltenteilung','Autokratieliebe','Anti-Wissenschaft','Für "einfache Bürger"',
-    'Heilsbringer','Komplexes Thema --> Einfache Lösung','Schwarz-Weiß-Denken',
-    'Angst- und Wutmache','Opferrolle','"Wir gegen Die"','Aufruf zur Veränderung',
-    'Herunterspielen und Diskreditieren der Gegner:innen'
-  ];
-  const rawData = [59,8,8,2,7,16,6,111,158,29,9,17,9,19,40,32];
-  const rawColors = [        '#8B0000', // Dunkelrot (Burgundy)
-    '#B22234', // Dunkelrot
-    
-    '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
-    '#A9A9A9', '#6495ED', '#DC143C', '#00008B', '#B03060', '#4682B4',
-    '#FF6347', '#0000CD', '#C71585', '#7B68EE', '#778899'
-  
-  ];
-
-  const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
-
-  new Chart(ctx, {
-    type: 'pie',
-    data: { labels, datasets:[{ data, backgroundColor: colors, borderColor:'#fff', borderWidth:1, hoverOffset:20 }]},
-    options: {
-      responsive:true,
-      rotation:-Math.PI/2,
-      plugins:{
-        title:{display:true,text:'Kategorisierte Beiträge Weißes Haus',font:{size:18}},
-        legend:{position:'top',labels:{font:{size:14}}},
-        tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${ctx.parsed}`}}
+    new Chart(ctxHaus, {
+      type: 'pie',
+      data: {
+        labels,
+        datasets: [{
+          data,
+          backgroundColor: colors,
+          borderColor: '#fff',
+          borderWidth: 1,
+          hoverOffset: 20
+        }]
+      },
+      options: {
+        responsive: true,
+        rotation: -Math.PI / 2,
+        plugins: {
+          title: { display: true, text: 'Kategorisierte Beiträge Weißes Haus', font: { size: 18 } },
+          legend: { position: 'top', labels: { font: { size: 14 } } },
+          tooltip: {
+            callbacks: {
+              label: ctx => `${ctx.label}: ${ctx.parsed}`
+            }
+          }
+        }
       }
-    }
-  });
+    });
+  } else {
+    console.error("Canvas 'Haus' nicht gefunden");
+  }
 });
