@@ -1,5 +1,7 @@
+// load-navbar.js
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("public/navbar.html")
+  const prefix = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' ? 'public/' : '';
+  fetch(`${prefix}navbar.html`)
     .then(res => {
       if (!res.ok) throw new Error("Navbar konnte nicht geladen werden");
       return res.text();
