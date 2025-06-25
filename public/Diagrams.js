@@ -850,261 +850,103 @@ if (Trump1) {
 }
 
 // Diagramm - JD Vance
-document.addEventListener("DOMContentLoaded", function () {
-  const canvasVance = document.getElementById('Vance');
-  if (!canvasVance) {
-    console.error("Canvas mit ID 'Vance' nicht gefunden!");
-    return;
-  }
+function getTop6PlusOthers(labels, data, colors) {
+  const sorted = labels.map((l, i) => ({ l, v: data[i], c: colors[i] }))
+                       .sort((a, b) => b.v - a.v);
+  const top6   = sorted.slice(0, 6);
+  const others = sorted.slice(6);
+  const othersVal = others.reduce((s, o) => s + o.v, 0);
+  const othersCol = '#808080';
 
-  const ctxVance = canvasVance.getContext('2d');
+  return {
+    labels : [...top6.map(o => o.l), 'Others'],
+    data   : [...top6.map(o => o.v), othersVal],
+    colors : [...top6.map(o => o.c), othersCol]
+  };
+}
 
-  const labels = [
-    'Anti-Minderheiten',
-    'Anti-Nachbarländer',
-    'Anti-Gewaltenteilung',
-    'Heilsbringer',
-    'Komplexes Thema --> Einfache Lösung',
-    'Angst- und Wutmache',
-    'Opferrolle',
-    '"Wir gegen Die"',
-    'Aufruf zur Veränderung',
+document.addEventListener('DOMContentLoaded', () => {
+  const cvs = document.getElementById('Vance');
+  if (!cvs) { console.error("Canvas 'Vance' nicht gefunden"); return; }
+  const ctx = cvs.getContext('2d');
+
+  const rawLabels = [
+    'Anti-Minderheiten','Anti-Nachbarländer','Anti-Gewaltenteilung',
+    'Heilsbringer','Komplexes Thema --> Einfache Lösung','Angst- und Wutmache',
+    'Opferrolle','"Wir gegen Die"','Aufruf zur Veränderung'
   ];
-  const data = [4, 2, 2, 9, 5, 9, 9, 20, 1];
-
-  const uniqueColors = [
-    '#8B0000', '#B22234', '#FF4C4C', '#3C3B6E', '#5A5ACD',
-    '#1E90FF', '#A9A9A9', '#6495ED', '#DC143C',
+  const rawData   = [4,2,2,9,5,9,9,20,1];
+  const rawColors = [
+    '#8B0000','#B22234','#FF4C4C','#3C3B6E','#5A5ACD',
+    '#1E90FF','#A9A9A9','#6495ED','#DC143C'
   ];
 
-  new Chart(ctxVance, {
+  const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
+
+  new Chart(ctx, {
     type: 'pie',
-    data: {
-      labels: labels,
-      datasets: [{
-        label: 'Gesamtanzahl Posts nach Kategorie',
-        data: data,
-        backgroundColor: uniqueColors,
-        borderColor: '#fff',
-        borderWidth: 1,
-        hoverOffset: 20
-      }]
-    },
+    data: { labels, datasets:[{ data, backgroundColor: colors, borderColor:'#fff', borderWidth:1, hoverOffset:20 }]},
     options: {
-      responsive: true,
-      rotation: -Math.PI / 4,
-      plugins: {
-        title: {
-          display: true,
-          text: 'Kategorisierte Beiträge Vance',
-          font: { size: 18 }
-        },
-        legend: {
-          position: 'top',
-          labels: { font: { size: 14 } }
-        },
-        tooltip: {
-          callbacks: {
-            label: function (context) {
-              const label = context.label || '';
-              const value = context.parsed || 0;
-              return `${label}: ${value}`;
-            }
-          }
-        }
+      responsive:true,
+      rotation:-Math.PI/2,
+      plugins:{
+        title:{display:true,text:'Kategorisierte Beiträge Vance',font:{size:18}},
+        legend:{position:'top',labels:{font:{size:14}}},
+        tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${ctx.parsed}`}}
       }
     }
   });
 });
+
 
 // Diagramm - Weißes Haus
-document.addEventListener("DOMContentLoaded", function () {
-  const canvasHaus = document.getElementById('Haus');
-  if (!canvasHaus) {
-    console.error("Canvas mit ID 'Haus' nicht gefunden!");
-    return;
-  }
+function getTop6PlusOthers(labels, data, colors) {
+  const sorted = labels.map((l, i) => ({ l, v: data[i], c: colors[i] }))
+                       .sort((a, b) => b.v - a.v);
+  const top6   = sorted.slice(0, 6);
+  const others = sorted.slice(6);
+  const othersVal = others.reduce((s, o) => s + o.v, 0);
+  const othersCol = '#808080';
 
-  const ctxHaus = canvasHaus.getContext('2d');
+  return {
+    labels : [...top6.map(o => o.l), 'Others'],
+    data   : [...top6.map(o => o.v), othersVal],
+    colors : [...top6.map(o => o.c), othersCol]
+  };
+}
 
-  const labels = [
-    'Anti-Minderheiten',
-    'Anti-Verfassung',
-    'Anti-Internationalisierung',
-    'Anti-Nachbarländer',
-    'Anti-Gewaltenteilung',
-    'Autokratieliebe',
-    'Anti-Wissenschaft',
-    'Für "einfache Bürger"',
-    'Heilsbringer',
-    'Komplexes Thema --> Einfache Lösung',
-    'Schwarz-Weiß-Denken',
-    'Angst- und Wutmache',
-    'Opferrolle',
-    '"Wir gegen Die"',
-    'Aufruf zur Veränderung',
+document.addEventListener('DOMContentLoaded', () => {
+  const cvs = document.getElementById('Haus');
+  if (!cvs) { console.error("Canvas 'Haus' nicht gefunden"); return; }
+  const ctx = cvs.getContext('2d');
+
+  const rawLabels = [
+    'Anti-Minderheiten','Anti-Verfassung','Anti-Internationalisierung','Anti-Nachbarländer',
+    'Anti-Gewaltenteilung','Autokratieliebe','Anti-Wissenschaft','Für "einfache Bürger"',
+    'Heilsbringer','Komplexes Thema --> Einfache Lösung','Schwarz-Weiß-Denken',
+    'Angst- und Wutmache','Opferrolle','"Wir gegen Die"','Aufruf zur Veränderung',
     'Herunterspielen und Diskreditieren der Gegner:innen'
   ];
-
-  const data = [59, 8, 8, 2, 7, 16, 6, 111, 158, 29, 9, 17, 9, 19, 40, 32];
-
-  const uniqueColors = [
-    '#8B0000', '#B22222', '#FF4500', '#DC143C', '#C71585',
-    '#8A2BE2', '#5A5ACD', '#1E90FF', '#4682B4', '#00CED1',
-    '#3CB371', '#6B8E23', '#FFD700', '#FFA500', '#FF69B4', '#A9A9A9'
+  const rawData = [59,8,8,2,7,16,6,111,158,29,9,17,9,19,40,32];
+  const rawColors = [
+    '#8B0000','#B22222','#FF4500','#DC143C','#C71585',
+    '#8A2BE2','#5A5ACD','#1E90FF','#4682B4','#00CED1',
+    '#3CB371','#6B8E23','#FFD700','#FFA500','#FF69B4','#A9A9A9'
   ];
 
-  new Chart(ctxHaus, {
+  const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
+
+  new Chart(ctx, {
     type: 'pie',
-    data: {
-      labels: labels,
-      datasets: [{
-        label: 'Gesamtanzahl Posts nach Kategorie',
-        data: data,
-        backgroundColor: uniqueColors,
-        borderColor: '#fff',
-        borderWidth: 1,
-        hoverOffset: 20
-      }]
-    },
+    data: { labels, datasets:[{ data, backgroundColor: colors, borderColor:'#fff', borderWidth:1, hoverOffset:20 }]},
     options: {
-      responsive: true,
-      rotation: -Math.PI / 4,
-      plugins: {
-        title: {
-          display: true,
-          text: 'Kategorisierte Beiträge Weißes Haus',
-          font: { size: 18 }
-        },
-        legend: {
-          position: 'top',
-          labels: { font: { size: 14 } }
-        },
-        tooltip: {
-          callbacks: {
-            label: function (context) {
-              const label = context.label || '';
-              const value = context.parsed || 0;
-              return `${label}: ${value}`;
-            }
-          }
-        }
+      responsive:true,
+      rotation:-Math.PI/2,
+      plugins:{
+        title:{display:true,text:'Kategorisierte Beiträge Weißes Haus',font:{size:18}},
+        legend:{position:'top',labels:{font:{size:14}}},
+        tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${ctx.parsed}`}}
       }
     }
   });
 });
-
-//Timeline Likes
-const ctx = document.getElementById('timelineChart').getContext('2d');
-
-const labels = [
-  'Juli', 'August', 'September', 'Oktober', 'November',
-  '', // Lücke zwischen Amtszeiten
-  'Jänner', 'Februar', 'März', 'April'
-];
-
-const ersteAmtszeit = [
-  39448.27586,
-  34046.51163,
-  31272.72727,
-  29673.46939,
-  65944.44444,
-  null,
-  133317.0732,
-  112144.7368,
-  79347.22222,
-  63655.17241
-];
-
-const zweiteAmtszeit = [
-  55603.57143,
-  19268.85246,
-  21346.30435,
-  19038.88889,
-  30500,
-  null,
-  180249.0946,
-  109799.929,
-  62315.00465,
-  53465.44348
-];
-
-new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: labels,
-    datasets: [
-      {
-        label: 'Erste Amtszeit',
-        data: ersteAmtszeit,
-        borderColor: 'blue',
-        backgroundColor: 'rgba(0,0,255,0.1)',
-        tension: 0.3,
-        spanGaps: false
-      },
-      {
-        label: 'Zweite Amtszeit',
-        data: zweiteAmtszeit,
-        borderColor: 'red',
-        backgroundColor: 'rgba(255,0,0,0.1)',
-        tension: 0.3,
-        spanGaps: false
-      }
-    ]
-  },
-// Im Chart-Options-Block ergänzen
-options: {
-  responsive: true,
-  interaction: {
-    mode: 'nearest',
-    axis: 'x',
-    intersect: false
-  },
-  plugins: {
-    title: {
-      display: true,
-      text: 'Verlauf ØLikes/ kategorisierten Posts im Monat'
-    },
-    legend: {
-      position: 'top'
-    },
-    tooltip: {
-      callbacks: {
-        label: function(context) {
-          let value = context.parsed.y;
-          return `${context.dataset.label}: ${value.toLocaleString('de-DE')} Likes`;
-        }
-      }
-    },
-    zoom: {
-      pan: {
-        enabled: true,
-        mode: 'x',
-      },
-      zoom: {
-        wheel: {
-          enabled: true
-        },
-        pinch: {
-          enabled: true
-        },
-        mode: 'x',
-      }
-    }
-  },
-  scales: {
-    y: {
-      title: {
-        display: true,
-        text: 'Durchschnittliche Like/Post'
-      }
-    },
-    x: {
-      title: {
-        display: true,
-        text: 'Zeitraum'
-      }
-    }
-  }
-}}
-);
