@@ -883,8 +883,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
     '#A9A9A9' // für "Others"
 
-    '#8B0000','#B22234','#FF4C4C','#3C3B6E','#5A5ACD',
-    '#1E90FF','#A9A9A9','#6495ED','#DC143C'
+    '#8B0000','#B22234'
   ];
 
   const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
@@ -942,8 +941,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '#A9A9A9' // für "Others"
   
     '#8B0000','#B22222','#FF4500','#DC143C','#C71585',
-    '#8A2BE2','#5A5ACD','#1E90FF','#4682B4','#00CED1',
-    '#3CB371','#6B8E23','#FFD700','#FFA500','#FF69B4','#A9A9A9'
+    '#8A2BE2','#5A5ACD','#1E90FF','#4682B4'
   ];
 
   const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
