@@ -1,0 +1,115 @@
+.Frage {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.Frage:nth-child(even) {
+    background-color: #F1EFEC;
+    margin-bottom: 3rem;
+}
+.Frage:nth-child(odd) {
+    margin-bottom: 3rem;
+}
+
+.Skala {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+
+.Frage > p{
+    text-align: center;
+}
+.erk {
+    text-align: center;
+}
+
+.Skala input[type="radio"] {
+    display: none;
+}
+
+.Skala span {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.Skala span:hover {
+    transform: scale(1.2);
+    background-color: #ffc3cf;
+    border-radius: 10px;
+}
+
+.Skala input[type="radio"]:checked + span {
+    background-color: #ffc3cf;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.B {
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #960018;
+    padding: 15px 32px;
+    border-radius: 10px;
+    font-size: 28px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color:#F1EFEC ;
+    color: #960018;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+.sp {
+    font-weight: bold;
+}
+
+.Punkte {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.Angabe {
+    font-weight: bold;
+}
+
+.Literaturhinweise {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
+ol.Liste {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

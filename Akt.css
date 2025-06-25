@@ -1,0 +1,14 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Aufzählung {
+    font-weight: bold;
+}
+
+.Musk {
+    display: flex;
+    flex-direction: column;
+}
+

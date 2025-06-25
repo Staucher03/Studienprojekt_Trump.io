@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../navbar.css"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../soc.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Social Media Analyse I</title>
+</head>
+<body>
+    <div class="start">
+    <h1>Studienprojekt: Donald Trump</h1>
+</div>
+
+<div id="navbar-container"></div>
+
+<h2>Analyse der Kommunikation von Donald Trump während Wahlkampf und Amtszeit (Trump I)</h2>
+
+<div class="Ab">
+  <p>Die Analyse von Donald Trump’s Kommunikation auf Twitter wurde – genau wie die Ereignisanalyse - für die folgenden Zeiträume durchgeführt:</p>
+    <ol class="Zeit">
+      <li><strong>Wahlkampfphase:</strong>  18. Juli 2017 bis 8. November 2017</li>
+      <li><strong>Amtszeit:</strong> 20. Jänner 2017 bis 30. April 2017</li>
+    </ol>
+    
+  <p>Die Untersuchung der Tweets basiert auf Posts, die von „Trump Twitter Archive“ archiviert worden sind. Aufgrund der Tatsache, dass jene Tweets bereits acht bis neun Jahre zurückliegen, musste auf das Archiv zurückgegriffen werden. In „Trump Twitter Archive“ gibt es die Möglichkeit, diverse Filter anzuwenden. Wegen Relevanzunterschieden wurde hierbei nicht nur nach dem Zeitraum sondern auch nach Art des Posts gefiltert. So wurden Retweets herausgefiltert, da deren Inhalt zumeist nicht von Bedeutung war (Trump Twitter Archive, (2016). Trump Twitter Archive V2. Online im Internet: <a href="https://www.thetrumparchive.com/">The Trump Archive</a> [Zugriff am 27.05.2025]).</p>
+  <br><br>
+    <p>
+      Insgesamt hat Donald Trump im Analysezeitraum 2293 Beiträge auf Twitter veröffentlicht. Davon waren 491 Posts in der Amtszeit, von welchen wiederum 273 aufgrund ihrer Populismusmerkmale in das Analyseblatt aufgenommen wurden. Auf die Wahlkampfperiode fallen 1802 Posts zurück, von welchen 254 in das Analyseblatt aufgenommen wurden. Die Zahl der populistisch einzuordnenden Posts sind in der Wahlkampfperiode geringer, da Trump während dieser sehr viel zum Thema Wahlveranstaltungen gepostet und seine Follower in jenen Beiträgen sachlich zur Teilnahme an der Veranstaltung eingeladen oder von vergangenen Events berichtet hatte. Jene Posts waren demnach nicht für die Analyse relevant.
+    </p>
+  <br><br>
+  <p>
+    Die Kategorisierung der Posts nach ihren populistischen Merkmalen erfolgte nach den Kriterien der im Laufe des Projektes eigens entwickelten Checkliste.
+  </p>
+</div>
+
+    
+    <div class="Container-Liste">
+      <div class="Zahlcon">
+        <div class="Zahl">
+          1
+        </div>
+        <div class="Zahl">
+          2
+        </div>
+        <div class="Zahl">
+          3
+        </div>
+        <div class="Zahl">
+          4
+        </div>
+        <div class="Zahl">
+          5
+        </div>
+        <div class="Zahl">
+          6
+        </div>
+        <div class="Zahl">
+          7
+        </div>
+        <div class="Zahl">
+          8
+        </div>
+        <div class="Zahl">
+          9
+        </div>
+        <div class="Zahl">
+          10
+        </div>
+        <div class="Zahl">
+          11
+        </div>
+        <div class="Zahl">
+          12
+        </div>
+        <div class="Zahl">
+          13
+        </div>
+        <div class="Zahl">
+          14
+        </div>
+        <div class="Zahl">
+          15
+        </div>
+        <div class="Zahl">
+          16
+        </div>
+        <div class="Zahl">
+          17
+        </div>
+      </div>
+      <div class="ZaT">
+        <div class="Text">
+          Anti-Elitismus
+        </div>
+        <div class="Text">
+          Anti-Minderheiten
+        </div>
+        <div class="Text">
+          Anti-Verfassung
+        </div>
+        <div class="Text">
+          Anti-Internationalisierung
+        </div>
+        <div class="Text">
+          Anti-Nachbarländer
+        </div>
+        <div class="Text">
+          Anti-Gewaltenteilung
+        </div>
+        <div class="Text">
+          Autokratieliebe
+        </div>
+        <div class="Text">
+          Anti-Wissenschaft
+        </div>
+        <div class="Text">
+          Für „einfache Bürger“
+        </div>
+        <div class="Text">
+          Selbstdarstellung als Heilsbringer
+        </div>
+        <div class="Text">
+          Komplexes Thema → einfache Lösung
+        </div>
+        <div class="Text">
+          Schwarz-Weiß-Denken
+        </div>
+        <div class="Text">
+          Angst- und Wutmache
+        </div>
+        <div class="Text">
+          Opferrolle
+        </div>
+        <div class="Text">
+          „Wir gegen Die“
+        </div>
+        <div class="Text">
+        Aufruf zu Veränderung
+        </div>
+        <div class="Text">
+          Herunterspielen und Diskreditieren der Gegner:innen
+        </div>
+      </div>
+    <div class="Diagramme" style="font-size: 1rem; text-align: right; height: 43rem;">
+      <canvas id="AllSoc1"></canvas>
+      Quelle: Eigens erhoben
+    </div>
+</div>
+<br><br>
+<div class="inhalt" id="farbe">
+  <div class="nichtziel">
+    <h1 style="text-align: center; color: #960018; padding-top: 1rem;">Wahlkampf</h1>
+    <h3 style="text-align: center;">18. Juli 2016 bis 08. November 2016</h3>
+    <p>Im Wahlkampf herrscht oft ein hitziger Ton. Das zeigt sich besonders deutlich in der Rhetorik von Donald Trump auf der Plattform Twitter. Mit einer Vielzahl rhetorischer Mittel versuchte er, breite Bevölkerungsschichten für sich zu gewinnen. Dabei scheute er sich auch nicht, populistische Strategien einzusetzen.</p>
+  
+<p>Tipp: Klicken Sie auf eine Überschrift, um die Darstellung anzupassen. (Erweiterte Leseansicht)</p>
+
+<section class="pinnwand">
+  <details class="zettel" id="weiß">
+    <summary>1.Hetze gegen Medien</summary>
+    <div class="beschreibung">
+      <p>
+        Trump selbst stellte sich selbst 66-mal als Opfer der Medien dar oder kritisierte diese anderweitig auf radikale Weise. Besonders fokussiert hierbei war er auf den Rundfunksender "CNN", welchem er Manipulation von Umfragen und TV-Debatten unterstellte.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel"id="weiß">
+    <summary>2. Gegner werden mit Beleidigungen heruntergespielt und andere Partei wird als nicht einig dargestellt</summary>
+    <div class="beschreibung">
+      <p>
+Insgesamt wurde Hillary Clinton 56-mal als „Crooked Hillary“ bezeichnet, wobei auch andere negative/beleidigende Kommentare vorhanden waren, jedoch häufte sich der oben genannte am meisten
+      </p>
+      <p>Zudem war es Trump ein Anliegen die Demokratische Partei gespalten wirken zu lassen, indem er behauptet hatte, dass Bernie Sanders der Spitzenkandidatenposten gestohlen wurde</p>
+    </div>
+  </details>
+
+    <details class="zettel" id="weiß">
+    <summary>3. Anwerben der African-American-Community</summary>
+    <div class="beschreibung">
+      <p>
+Trump versuchte mit mehreren Posts um den 26.08.2016 herum, die „African-American-Community“ anzusprechen. Dies dauerte ungefähr eine Woche an. 
+      </p>
+      <p>Er schrieb des öfteren "I will fix it" in Bezug auf die Probleme der Community.</p>
+    </div>
+  </details>
+
+      <details class="zettel" id="weiß">
+    <summary>4. Stärkung von Angst und Wut in der Bevölkerung und er selbst als Retter</summary>
+    <div class="beschreibung">
+      <p>
+Trump postete oft über das Zusammenbrechen des Gesundheitssystems aufgrund von "ObamaCare" und über die Fluten von Immigranten welche dauerhaft über die US-Amerikanische Grenze kommen. Vor allem mit diesen zwei Themen versuchte er Angst und Wut gezielt auf die Demokraten zu leiten.
+      </p>
+<p>Im Gegenzug stellte er sich selbst als Lösung für diese Probleme dar, wobei er jedoch nie konkrete Vorschläge bringt.</p>
+    </div>
+  </details>
+
+</section>
+
+<div class="Ab">
+  <p>Im Großen und Ganzen waren ein großteils seiner kategorisierten Tweets im Wahlkampf Verspottung und Verhöhnung seiner GegnerInnen oder er setzte sich in die Opferrolle gegenüber den Medien. Insgesamt sind auch ein deutlicher Anteil seiner Posts Werbung und Bilder seiner Wahlkampfveranstaltungen oder Aufrufe für ihn wählen zu gehen, wobei diese oft an spezielle Gruppen gerichtet sind.</p>
+</div>
+
+  
+<a href="https://x.com/realDonaldTrump/status/783459936361512960?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E783459936361512960%7Ctwgr%5E58431d2cde99b52d72c2875e0233d3db797b40cd%7Ctwcon%5Es1_&ref_url=http%3A%2F%2Flocalhost%3A3000%2Fpublic%2Fsoc_I" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card" id="weiß">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 5.10.2016</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Wow, 
+@CNN
+ is so negative. Their panel is a joke, biased and very dumb. I'm turning to 
+@FoxNews
+ where we get a fair shake! Mike will do great
+    </div>
+  </div>
+</a>
+<a href="https://x.com/realDonaldTrump/status/757773671545044992?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E757773671545044992%7Ctwgr%5E3e23d1ce71f961f80df332725e1d223066102840%7Ctwcon%5Es1_&ref_url=http%3A%2F%2Flocalhost%3A3000%2Fpublic%2Fsoc_I" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card" id="weiß">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 26.07.2016</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+Sad to watch Bernie Sanders abandon his revolution. We welcome all voters who want to fix our rigged system and bring back our jobs.
+    </div>
+  </div>
+</a>
+
+<a href="https://x.com/realDonaldTrump/status/759008377577967616?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E759008377577967616%7Ctwgr%5Eb0e25463f34746708b08d6d62da1b0344397dca4%7Ctwcon%5Es1_&ref_url=http%3A%2F%2Flocalhost%3A3000%2Fpublic%2Fsoc_I" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card" id="weiß">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 29.07.2016</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+Crooked Hillary Clinton made up facts about me, and "forgot" to mention the many problems of our country, in her very average scream!
+    </div>
+  </div>
+</a>
+
+<a href="https://x.com/realDonaldTrump/status/769177810678067200?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E769177810678067200%7Ctwgr%5Ebdda05a14700b1622c45aaeb3a31d9b9c0a58de3%7Ctwcon%5Es1_&ref_url=http%3A%2F%2Flocalhost%3A3000%2Fpublic%2Fsoc_I" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card" id="weiß">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 26.08.2016</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+What do African-Americans and Hispanics have to lose by going with me. Look at the poverty, crime and educational statistics. I will fix it!
+    </div>
+  </div>
+</a>
+
+<a href="https://x.com/realDonaldTrump/status/788866344733114368?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E788866344733114368%7Ctwgr%5E09b6d6cec7fe0efe532865a426064f4b0c1af8dc%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.thetrumparchive.com%2F%3FresultssortOption%3D22Oldest22retweet%3D22false22startDate%3D222016-10-1922endDate%3D222016-10-2022" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card" id="weiß">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 20.10.2016</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+'Over 250,000 to Lose Health Insurance in Battleground North Carolina Due to #Obamacare'
+    </div>
+  </div>
+</a>
+
+
+  
+ <div class="bullet-point">
+<h3 style="color: #960018; text-align: center;"> Ergebnisse der Kategorisierung Wahlkampf 1</h3>
+ </div>
+     <ul class="Ab">
+      <li>Vor allem stach Trump mit seiner enormen „Wir gegen Die“ (Kat. 16) Mentalität heraus, mit Hilfe derer er seine eigene Wählerschaft gegen die Demokraten aufhetzen wollte</li>
+      <li>Zudem verspottete er 132 Mal seine politischen GegnerInnen. Mit Hilfe dieser spöttischen Kommentaren versuchte er seine Konkurrenz, allen voran Hillary Clinton, als nicht zurechnungsfähig und schlecht für das Land darzustellen.</li>
+      <li>Mit 48 Posts versuchte er Angst und Wut zu verbreiten, um die Wählerschaft, meist ohne Argumente und sich selbst dennoch als einzige Alternative, auf seine Seite zu locken.</li>
+    </ul>
+
+
+
+
+  <div class="Diagramme" style="font-size: 1rem; text-align: right; width: 62rem; margin-left: 17rem;">
+    <canvas id="Wahlkampf"></canvas>
+    Quelle: Eigens erhoben
+  </div>
+
+
+
+
+
+  </div>
+  <script src="Diagrams.js"></script>
+    <script src="load-navbar.js" defer></script>
+</div>
+
+<div class="inhalt">
+  <div class="nichtziel">
+    <h1 style="text-align: center; color: #960018; padding-top: 1rem;">Amtszeit</h1>
+    <h3 style="text-align: center;">18. Juli 2016 bis 08. November 2016</h3>
+  </div>
+  <div class="Ab">
+    <p>Zu Trumps erster Amtszeit konnten 491 Tweets vermerkt werden, von welchen wiederum 273 als populistisch kategorisiert worden sind. Hier handelt es sich ausschließlich um Tweets von Donald Trump selbst. Der Analysezeitraum streckt sich über die ersten einhundert Tage seiner Präsidentschaft.</p>
+    <p> Es wurde deutlich, dass sich einige Themen – und im weiteren Sinne auch die zugehörigen Kategorien – häufig in den Tweets wiederfinden lassen. </p>
+  <p>Tipp: Klicken Sie auf eine Überschrift, um die Darstellung anzupassen. (Erweiterte Leseansicht)</p>
+  </div>
+</div>
+
+
+
+<section class="pinnwand">
+  <details class="zettel">
+    <summary>1. Trump als Opfer seiner Gegner</summary>
+    <div class="beschreibung">
+      <p>
+        Besonders oft stellt Donald Trump sich selbst und seine nahestehende Vertreter:innen als Opfer der „Bösen“ hin. Sowohl die „Fake News“ – Medien, die auf objektive Berichterstattung setzen und seine Taten und Worte nicht beschönigen –  die „Radical Left“, die Demokraten, Demonstrant:innen als auch Richter:innen haben es laut Trump selbst auf ihn abgesehen.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>2. Schüren von Angst/Wut und Hetze</summary>
+    <div class="beschreibung">
+      <p>
+        Häufig setzt Trump darauf, Angst oder Wut bzw. Hetze zu verbreiten. Meistens richtet sich diese gegen unabhängige Institutionen, wie etwa Medien oder die Justiz, gegen politische Gegner:innen sowie gegen „Illegal Aliens“, wie er Migrant:innen meist bezeichnet. So versucht er, seine Follower:innen von seinen Vorhaben und Ansichten zusätzlich zu überzeugen.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>3. Gewaltenteilung und unabhängige Einrichtungen als Hürde</summary>
+    <div class="beschreibung">
+      <p>
+        Einrichtungen, die in keinem Zusammenhang zur Regierung stehen, werden oft als Gegner dargestellt. Zudem wird manchmal angedroht, jene Institutionen in ihrem Handeln einzuschränken, wie etwa durch Klagen oder Executive Orders. Auffällig ist jedoch, dass er Berichte oder Urteile, die seine Meinung und Einstellung widerspiegeln, in hohen Tönen lobt und auch vielzählig auf Social Media teilt.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>4. Trump als Held des amerikanischen Volkes</summary>
+    <div class="beschreibung">
+      <p>
+        Wichtig ist es ihm außerdem, häufig zu betonen, was er alles für das amerikanische Volk leistet. Lösungen für Probleme bzw. genaue Erklärungen seiner Arbeit werden dabei eher selten bereitgestellt. Stattdessen vergleicht Trump gerne die Anzahl und den Ausmaß seiner Errungenschaften mit der seiner Vorgänger und versucht so deutlich zu machen, dass er seine Position als Präsident weitaus ernster nimmt als alle zuvor. Oft berichtet er auch von Plänen oder gibt Versprechen, auf welche nicht weiter eingegangen wird.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>5. Herunterspielen und Diskreditieren von politischen Gegner:innen</summary>
+    <div class="beschreibung">
+      <p>
+        Obwohl die Diskreditierung seiner Gegner:innen im Vergleich zum Wahlkampf während der Amtszeit abgenommen hat, wird deutlich, dass Trump seine Opponent:innen vielmals herunterspielt, sich über sie lächerlich macht oder ihnen sogar Verbrechen unterstellt, um sich mit seinen eigenen Errungenschaften zu profilieren. So geht er u. a. weiterhin häufig auf Hillary Clintons Wahlniederlage ein, redet von durch die Demokraten verfälschten Wahlergebnissen, beschwert sich über ObamaCare oder schreibt darüber, dass Obama ihn im Trump Tower abgehört habe, um seinen Wahlsieg zu verhindern.
+      </p>
+    </div>
+  </details>
+
+</section>
+
+<div class="Ab">
+  <p>Allgemein ist festzustellen, dass Trump in seinen Tweets sowohl auf emotionale Aufladung als auch auf einen vertrauten Umgangstun, welcher seinen Follower:innen vermutlich Bürgerlichkeit signalisieren soll, setzt. Die Posts sind ausschließlich reißerisch formuliert, Tweets in objektivem Ton, die auf Fakten basieren, waren kaum zu finden.</p>
+</div>
+
+<a href="https://x.com/realDonaldTrump/status/829133645055135750?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E829133645055135750%7Ctwgr%5E049d8a549dff0dad0853b26eb16ac81bb34d5321%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.thetrumparchive.com%2F%3Fsearchbox%3D22ItisadisgracethatmyfullCabinetisstillnotinplace2Cthelongestsuchdelayinthehistoryofourcountry.ObstructionbyDemocrats2122" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 07.02.2017</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      It is a disgrace that my full Cabinet is still not in place, the longest such delay in the history of our country. Obstruction by Democrats!
+    </div>
+  </div>
+</a>
+
+<a href="https://x.com/realDonaldTrump/status/838351476401520640?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E838351476401520640%7Ctwgr%5E049d8a549dff0dad0853b26eb16ac81bb34d5321%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.thetrumparchive.com%2F%3Fsearchbox%3D22ItisadisgracethatmyfullCabinetisstillnotinplace2Cthelongestsuchdelayinthehistoryofourcountry.ObstructionbyDemocrats2122" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 05.03.2017</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Is it true the DNC would not allow the FBI access to check server or other equipment after learning it was hacked? Can that be possible?
+    </div>
+  </div>
+</a>
+
+<a href="https://x.com/realDonaldTrump/status/825690087857995776?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E825690087857995776%7Ctwgr%5E049d8a549dff0dad0853b26eb16ac81bb34d5321%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.thetrumparchive.com%2F%3Fsearchbox%3D22ItisadisgracethatmyfullCabinetisstillnotinplace2Cthelongestsuchdelayinthehistoryofourcountry.ObstructionbyDemocrats2122" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 29.01.2017</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Somebody with aptitude and conviction should buy the FAKE NEWS and failing @nytimes and either run it correctly or let it fold with dignity!
+    </div>
+  </div>
+</a>
+
+<a href="https://x.com/realDonaldTrump/status/830741932099960834?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E830741932099960834%7Ctwgr%5E049d8a549dff0dad0853b26eb16ac81bb34d5321%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.thetrumparchive.com%2F%3Fsearchbox%3D22ItisadisgracethatmyfullCabinetisstillnotinplace2Cthelongestsuchdelayinthehistoryofourcountry.ObstructionbyDemocrats2122" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 12.02.2017</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      The crackdown on illegal criminals is merely the keeping of my campaign promise. Gang members, drug dealers & others are being removed!
+    </div>
+  </div>
+</a>
+
+<a href="https://x.com/realDonaldTrump/status/837989835818287106?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E837989835818287106%7Ctwgr%5E049d8a549dff0dad0853b26eb16ac81bb34d5321%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fwww.thetrumparchive.com%2F%3Fsearchbox%3D22ItisadisgracethatmyfullCabinetisstillnotinplace2Cthelongestsuchdelayinthehistoryofourcountry.ObstructionbyDemocrats2122" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 04.03.2017</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Terrible! Just found out that Obama had my "wires tapped" in Trump Tower just before the victory. Nothing found. This is McCarthyism!
+    </div>
+  </div>
+</a>
+
+<div class="Ab">
+  <p>In der untenstehenden Tabelle ist die Anzahl der Tweets, in denen die jeweiligen Kategorien wiedererkannt worden sind, aufgelistet. Einem Tweet wurden zwischen einer und drei Kategorien zugeordnet. </p>
+</div>
+
+
+<table>
+        <thead>
+            <tr>
+                <th>Kat.</th>
+                <th>Thema</th>
+                <th>Anzahl</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="innen"><td class="Kat">14</td><td>Opferrolle</td><td class="Kat">87</td></tr>
+            <tr class="innen"><td class="Kat">13</td><td>Angst- und Wutmache</td><td class="Kat">86</td></tr>
+            <tr class="innen"><td class="Kat">6</td><td>Anti-Gewaltenteilung</td><td class="Kat">78</td></tr>
+            <tr class="innen"><td class="Kat">10</td><td>Selbstdarstellung als Heilsbringer</td><td class="Kat">76</td></tr>
+            <tr class="innen"><td class="Kat">17</td><td>Herunterspielen und Diskreditieren der Gegner</td><td class="Kat">70</td></tr>
+            <tr class="innen"><td class="Kat">15</td><td>„Wir gegen die“-Rhetorik</td><td class="Kat">64</td></tr>
+            <tr class="innen"><td class="Kat">9</td><td>Für „einfache Bürger“</td><td class="Kat">50</td></tr>
+            <tr class="innen"><td class="Kat">16</td><td>Aufruf zu Veränderung</td><td class="Kat">47</td></tr>
+            <tr class="innen"><td class="Kat">11</td><td>Komplexes Thema → einfache Lösung</td><td class="Kat">26</td></tr>
+            <tr class="innen"><td class="Kat">4</td><td>Anti-Internationalisierung</td><td class="Kat">25</td></tr>
+            <tr class="innen"><td class="Kat">12</td><td>Schwarz-Weiß-Denken</td><td class="Kat">22</td></tr>
+            <tr class="innen"><td class="Kat">5</td><td>Anti-Nachbarländer</td><td class="Kat">14</td></tr>
+            <tr class="innen"><td class="Kat">2</td><td>Anti-Minderheiten</td><td class="Kat">13</td></tr>
+            <tr class="innen"><td class="Kat">3</td><td>Anti-Verfassung</td><td class="Kat">7</td></tr>
+            <tr class="innen"><td class="Kat">1</td><td>Anti-Elite</td><td class="Kat">4</td></tr>
+            <tr class="innen"><td class="Kat">8</td><td>Anti-Wissenschaft</td><td class="Kat">4</td></tr>
+            <tr class="innen"><td class="Kat">7</td><td>Autokratieliebe</td><td class="Kat">1</td></tr>
+        </tbody>
+    </table>
+  
+<br></br>
+
+<footer style="text-align: center; padding: 1em; background-color: #F1EFEC; font-size: 0.9em;">
+  <p>&copy; 2025 Studienprojekt: Donald Trump I & II. Alle Rechte vorbehalten.</p>
+  <p>
+    | <a href="Impressum.html">Impressum</a> | 
+  </p>
+  <p><a href="#navbar-container">Zurück zur Navigaton</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+ body {
+    background: #BF0A30;
+    background: linear-gradient(88deg, rgba(191, 10, 48, 1) 6%, rgba(241, 239, 236, 0.4) 92%);
+}
+
+.Kärtchen {
+  width: 900px;
+  height: 600px;          
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#Titelfolie {
+    background-image: url(./images/whitehouse1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+}
+
+.reveal section#Titelfolie {
+    padding: 0;
+    margin: 0;
+}
+
+   

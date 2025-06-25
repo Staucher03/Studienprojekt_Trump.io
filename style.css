@@ -1,0 +1,289 @@
+.Start {
+    background-image: url(./images/Flagge.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+#farbe {
+    background-color: #F1EFEC;  
+}
+
+
+.leiste {
+    text-align: center;
+    color: white;
+}
+
+.erklärung {
+    display: flex;
+    align-items: center;
+}
+
+div
+.Was{
+    flex: 1;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+.Hintergrund{
+    flex: 1;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
+.inhalt {
+    display: flex;
+    flex-direction: column;
+}
+.Ziel{
+    flex: 1;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+.nichtziel {
+    flex: 1;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
+.Wer{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+}
+.Wie{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 10rem;
+}
+.diagramm-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+  
+}
+
+.diagramm-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.diagramm-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.tweet-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.tweet-card {
+  background-color: #F1EFEC;
+  border-left: 4px solid #960018;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  font-family: sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#weiß {
+  background-color: white;
+}
+
+.tweet-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tweet-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #960018;
+}
+
+.tweet-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.tweet-info span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.tweet-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #111;
+}
+
+.ziel-box{
+  width: 18%;
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);   
+}
+
+.zahl {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+  background-color: #F1EFEC;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.ziel-text{
+  margin-top: 3rem;
+  text-align: left;
+}
+.ziel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ConCon {
+    flex: 1;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
+.ziel-box:hover {
+  background-color: #EDF2F8;
+  transform: scale(1.1);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  padding: 1rem;
+  background-color: #F1EFEC;
+  border-radius: 12px;
+  max-width: 960px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+}
+
+.video-container iframe,
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  max-width: 800px;
+}
+
+.video-caption {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+
+.insta-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  background-color: #F1EFEC;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.insta-card:hover {
+  transform: scale(1.02);
+}
+
+.insta-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.insta-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.insta-info {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.insta-image img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.insta-caption {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.4;
+}
+
+.Nummer {
+  font-weight: bold;
+}

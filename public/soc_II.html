@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../navbar.css"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../soc.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Social Media Analyse II</title>
+</head>
+<body>
+    <div class="start">
+    <h1>Studienprojekt: Donald Trump</h1>
+</div>
+
+<div id="navbar-container"></div>
+
+<h2>Analyse der Kommunikation von Donald Trump während der Wahlkampf- und Amtszeit (Trump II)</h2>
+
+<div class="Ab">
+  <p>Die Analyse der Kommunikation auf Truth Social rund um Donald Trump erstreckt sich über zwei Phasen: 
+    <ol class="Zeit">
+      <li><strong>Wahlkampfphase:</strong>  13. Juli 2024 bis 5.11.2025</li>
+      <li><strong>Amtszeit:</strong> 20. Jänner 2025 bis 30. April 2025</li>
+    </ol>
+    
+  <p>Die Analyse während der Amtszeit und der Wahlkampfzeit getätigten Posts basiert auf den Truth Social Archiv von Donald Trump. <a href="https://www.trumpstruth.org/">Trump's Truth</a>, 14.05.2025</p>
+  <br><br>
+  <div class="SMChart">
+    <p>
+      Insgesamt wurden im Untersuchungzeitraum 7 019 Beiträge auf Truth Social dokumentiert. Davon waren 1685 Beiträge in der Amtszeit. 
+      4356 fallen auf die Wahlkampfphase zurück. Tatsächlich haben wir nur 545 Posts kategorisiert.
+    </p>
+    <canvas id="socialMediaChart"></canvas>
+  </div>
+  <br><br>
+    Die Kategorisierung der gesamten Posts von Trump erfolgte auf Basis einer selbst entwickelten Checkliste (links). Auf der rechten Seite befinden sich ein paar Diagrame. 
+</p>
+</div>
+   
+    <div class="Container-Liste">
+      <div class="Zahlcon">
+        <div class="Zahl">
+          1
+        </div>
+        <div class="Zahl">
+          2
+        </div>
+        <div class="Zahl">
+          3
+        </div>
+        <div class="Zahl">
+          4
+        </div>
+        <div class="Zahl">
+          5
+        </div>
+        <div class="Zahl">
+          6
+        </div>
+        <div class="Zahl">
+          7
+        </div>
+        <div class="Zahl">
+          8
+        </div>
+        <div class="Zahl">
+          9
+        </div>
+        <div class="Zahl">
+          10
+        </div>
+        <div class="Zahl">
+          11
+        </div>
+        <div class="Zahl">
+          12
+        </div>
+        <div class="Zahl">
+          13
+        </div>
+        <div class="Zahl">
+          14
+        </div>
+        <div class="Zahl">
+          15
+        </div>
+        <div class="Zahl">
+          16
+        </div>
+        <div class="Zahl">
+          17
+        </div>
+      </div>
+      <div class="ZaT">
+        <div class="Text">
+          Anti-Elite
+        </div>
+        <div class="Text">
+          Anti-Minderheiten
+        </div>
+        <div class="Text">
+          Anti-Verfassung
+        </div>
+        <div class="Text">
+          Anti-Internationalisierung
+        </div>
+        <div class="Text">
+          Anti-Nachbarländer
+        </div>
+        <div class="Text">
+          Anti-Gewaltenteilung
+        </div>
+        <div class="Text">
+          Autokratieliebe
+        </div>
+        <div class="Text">
+          Anti-Wissenschaft
+        </div>
+        <div class="Text">
+          Für „einfache Bürger“
+        </div>
+        <div class="Text">
+          Selbstdarstellung als Heilsbringer
+        </div>
+        <div class="Text">
+          Komplexes Thema → einfache Lösung
+        </div>
+        <div class="Text">
+          Schwarz-Weiß-Denken
+        </div>
+        <div class="Text">
+          Angst- und Wutmache
+        </div>
+        <div class="Text">
+          Opferrolle
+        </div>
+        <div class="Text">
+          „Wir gegen die“-Rhetorik
+        </div>
+        <div class="Text">
+        Aufruf zu Veränderung
+        </div>
+        <div class="Text">
+          Herunterspielen und Diskreditieren der Gegner
+        </div>
+      </div>
+    <div class="Diagramme" style="font-size: 1rem; text-align: right; height: 43rem;">
+      <canvas id="AllSoc"></canvas> Quelle: Eigens erhoben
+    </div>
+</div>
+<br><br>
+<div class="inhalt" id="farbe">
+  <div class="nichtziel">
+    <h1 style="text-align: center; color: #960018; padding-top: 1rem;">Wahlkampf</h1>
+    <h3 style="text-align: center;">13.07.2024 - 05.11.2024</h3>
+    <p>Auch im zweiten Wahlkampf ging es hitzig zu, wobei sich dennoch Einiges vom ersten Wahlkampf änderte.</p>
+  
+    <div class="bullet-point">
+      <b>1.	Opfer der „eigenen“ und anderen Medien (Fox/NYT)</b>
+    </div>
+    <ul>
+      <li>Trump stellte sich in diesem Wahlkampf als Opfer des konservativen Senders FOX News dar, welcher seiner Ansicht nach „zu fair“ war und zu ausgewogen berichtete. </li>
+      <li>Das zweite Medium, auf das er sich einschoss, war die NY Times, welche in seinen Augen zu viel Fake News produzierte und deshalb „Failing“ ist, was auch schon beim CNN in Wahlkampf 1 schon berichtet wurde.</li>
+    </ul>
+  
+<a href="https://truthsocial.com/@realDonaldTrump/112871545419207012/embed" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card" id="weiß">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 29. Juli 2024</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Why is FoxNews putting on Crazy Kamala Harris Rallies? Why do they allow the perverts at the failed and disgraced Lincoln Project to advertise on FoxNews? Even Mr. Kellyanne Conway, a man so badly hurt and humiliated by his wife (she must have done some really NASTY things to him, because he is CRAZY!), is advertising on FoxNews. We have to WIN WITHOUT FOX!
+    </div>
+  </div>
+</a>
+
+      <div class="bullet-point">
+      <b>2. Die Wahl ist "rigged" aufgrund des Kandidatenwechsels</b>
+    </div>
+    <ul>
+      <li>Trump gab schon früh an, dass die Wahl „rigged“ ist. Zuallererst, wegen dem frühen Kandidatenwechsel der Demokraten von Biden zu Harris. Aufgrund dessen soll die Vorbereitung der Republikaner umsonst gewesen sein.</li>
+    </ul>
+  
+        <div class="bullet-point">
+      <b>3.	Hetze gegen Gegner (Crooked Camala -> Crazy Camala -> Comrade Camala)</b>
+    </div>
+    <ul>
+      <li>In zweiten Wahlkampf entschied sich Trump die Art und Weise wie er über seine Konkurentin schrieb, zu ändern. Er startete, wie er bei Biden aufgehört hatte, mit dem Wort “Crooked”(15-mal), worauf Camala als “Crazy”(6-mal) und danach als Comrade Camala (16-Mal) bezeichnet wurde. Generell versuchte er sie auf Social Media als schlimme Kommunistin und Marxistin darzustellen (Auch oft mit AI-Content).</li>
+    </ul>
+
+<a href="https://truthsocial.com/@realDonaldTrump/113085824185219165/embed" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card" id="weiß">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 05. September 2024</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Comrade Kamala Harris and her Department of Justice are trying to interfere in and suppress the Election in favor of the Democrats by resurrecting the Russia, Russia, Russia Hoax, and trying to say that Russia is trying to help me, which is absolutely FALSE. In fact, President Putin would much rather see Comrade Kamala Harris in Office, as he strongly said just this morning...    </div>
+  </div>
+</a>
+
+        <div class="bullet-point">
+      <b>4.	Viel AI-Content</b>
+    </div>
+    <ul>
+      <li>Über den ganzen Wahlkampf konnte man sehr viel AI-generierten Content wahrnehmen. Am 29.07.2024 postete und repostete er zum Beispiel 15 AI-generierte Bilder von Kamala und sich selbst. </li>
+    </ul>
+<iframe src="https://truthsocial.com/@lauramarks/112871585417807913/embed" class="truthsocial-embed" style="max-width: 100%; border: 0" width="700" height="600" allowfullscreen="allowfullscreen"></iframe><script src="https://truthsocial.com/embed.js" async="async"></script>
+  </div>
+
+      
+</div>
+
+<h2>Amtszeit</h2>
+<div class="Ab">
+  <p>Zu Trumps zweiter Amtszeit konnten 1658 Posts vermerkt werden, von welchen wiederum 363 als populistisch kategorisiert worden sind. Hier handelt es sich ausschließlich um Posts von Donald Trump selbst. Der Analysezeitraum streckt sich über die ersten einhundert Tage seiner Präsidentschaft.</p>
+  <p> Es wurde deutlich, dass sich einige Themen – und im weiteren Sinne auch die zugehörigen Kategorien – häufig in den Tweets wiederfinden lassen.</p>
+  <p>Tipp: Klicken Sie auf eine Überschrift, um die Darstellung anzupassen. (Erweiterte Leseansicht)</p>
+</div>
+
+<section class="pinnwand">
+  <details class="zettel">
+    <summary>1. Medienkritik</summary>
+    <div class="beschreibung">
+      <p>
+        Trump bezeichnet Medien häufig als „Fake News“. Damit untergräbt er ihre Glaubwürdigkeit und präsentiert seine Sichtweise als Wahrheit.
+        Medien gelten dabei oft als Teil einer „Elite-Verschwörung“.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>2. Der beste Präsident</summary>
+    <div class="beschreibung">
+      <p>
+        Trump stellt sich als einzige Lösung für die Probleme der USA dar. Er teilt viele Beiträge, in denen er als „bester Präsident“ dargestellt wird.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>3. Mobilisierung der Anhänger</summary>
+    <div class="beschreibung">
+      <p>
+        Seine Plattform nutzt er intensiv zur Mobilisierung. Veranstaltungen werden beworben, Beiträge sind emotional aufgeladen.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>4. Wirtschaftspolitik</summary>
+    <div class="beschreibung">
+      <p>
+        Trump bewirbt seine Handelsmaßnahmen als Schutz für „Amerika“ vor internationaler Ausbeutung.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>5. Abwertung politischer Gegner</summary>
+    <div class="beschreibung">
+      <p>
+        Gegner werden oft in beleidigender Sprache verspottet. Komplexe Themen stellt er dabei vereinfacht oder verzerrt dar.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>6. KI-Bilder</summary>
+    <div class="beschreibung">
+      <p>
+        Viele KI-generierte Bilder zeigen ihn als kraftvollen Anführer. Sie sind emotional inszeniert und sollen Stärke vermitteln.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>7. Videoausschnitte</summary>
+    <div class="beschreibung">
+      <p>
+        Zahlreiche kurze Videos zeigen Interviews oder Party-Szenen. Der Fokus liegt auf Trump als Person.
+      </p>
+    </div>
+  </details>
+
+  <details class="zettel">
+    <summary>8. Kaum Reaktionen auf Politik</summary>
+    <div class="beschreibung">
+      <p>
+        Inhaltliche Reaktionen auf politische Entscheidungen sind selten. Stattdessen überwiegt Eigenvermarktung.
+      </p>
+    </div>
+  </details>
+</section>
+
+<div class="Ab">
+  <p>Trump legte den Fokus auf medienkritische Inhalte, griff häufig das Thema „Fake News“ auf und teilte Beiträge, die ihn positiv darstellten. Der Ton blieb emotional und vertraut, offenbar um Nähe und Bürgernähe zu vermitteln. Die Beiträge waren meist reißerisch formuliert, sachliche, faktenbasierte Inhalte fehlten weitgehend – genauso wie in seiner ersten Amtszeit.</p>
+</div>
+
+<a href="https://truthsocial.com/@realDonaldTrump/posts/114117008305421663" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 06. März 2025</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      The Golden Age of America has just begun! Over the past six weeks, our Administration has delivered on promises like no Administration before it, always putting America First!...
+    </div>
+  </div>
+</a>
+<a href="https://truthsocial.com/@realDonaldTrump/posts/114197120302143482" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 20. März 2025</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Judge James Boasberg is doing everything in his power to usurp the Power of the Presidency. He is a local, unknown Judge, a Grandstander, looking for publicity, and it cannot be for any other reason, because his “Rulings” are so ridiculous, and inept. SAVE AMERICA!
+    </div>
+  </div>
+</a>
+<a href="https://truthsocial.com/@realDonaldTrump/posts/114414863742664682" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 28. April 2025</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Great Pollster John McLaughlin, one of the most highly respected in the industry, has just stated that The Failing New York Times Poll, and the ABC/Washington Post Poll,...
+    </div>
+  </div>
+</a>
+<a href="https://truthsocial.com/@realDonaldTrump/posts/113968217842034212" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 08. Februar 2025</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      Crooked Joe’s MANDATE, “NO PLASTIC STRAWS, ONLY PAPER,” IS DEAD! Enjoy your next drink without a straw that disgustingly dissolves in your mouth!!!
+    </div>
+  </div>
+</a>
+<a href="https://truthsocial.com/@realDonaldTrump/posts/113872493479587305" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 22. Jänner 2025</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      <img src="https://static-assets-1.truthsocial.com/tmtg:prime-ts-assets/media_attachments/files/113/872/493/430/750/864/original/880116d2d3758a5a.jpg">
+    </div>
+  </div>
+</a>
+<a href="https://truthsocial.com/@realDonaldTrump/posts/113982202515178648" target="_blank" rel="noopener noreferrer" class="tweet-link">
+  <div class="tweet-card">
+    <div class="tweet-header">
+      <img src="/images/profilbildtweet.jpg" class="tweet-avatar">
+      <div class="tweet-info">
+        <strong>Donald J. Trump</strong>
+        <span>@realDonaldTrump · 11. Februar 2025</span>
+      </div>
+    </div>
+    <div class="tweet-body">
+      We’re going back to plastic straws!...
+    </div>
+  </div>
+</a>
+
+<div class="Ab">
+  <p>In der untenstehenden Tabelle ist die Anzahl der Posts, in denen die jeweiligen Kategorien wiedererkannt worden sind, aufgelistet. Einem Post wurden zwischen einer und drei Kategorien zugeordnet. </p>
+</div>
+
+<table>
+        <thead>
+            <tr>
+                <th>Kat.</th>
+                <th>Thema</th>
+                <th>Anzahl</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="innen"><td class="Kat">1</td><td>Anti-Elitismus</td><td class="Kat">7</td></tr>
+            <tr class="innen"><td class="Kat">2</td><td>Anti-Minderheiten</td><td class="Kat">9</td></tr>
+            <tr class="innen"><td class="Kat">3</td><td>Anti-Verfassung</td><td class="Kat">10</td></tr>
+            <tr class="innen"><td class="Kat">4</td><td>Anti-Internationalisierung</td><td class="Kat">2</td></tr>
+            <tr class="innen"><td class="Kat">5</td><td>Anti-Nachbarländer</td><td class="Kat">57</td></tr>
+            <tr class="innen"><td class="Kat">6</td><td>Anti-Gewaltenteilung</td><td class="Kat">52</td></tr>
+            <tr class="innen"><td class="Kat">7</td><td>Autokratieliebe</td><td class="Kat">1</td></tr>
+            <tr class="innen"><td class="Kat">8</td><td>Anti-Wissenschaft</td><td class="Kat">21</td></tr>
+            <tr class="innen"><td class="Kat">9</td><td>Für "einfache Bürger"</td><td class="Kat">4</td></tr>
+            <tr class="innen"><td class="Kat">10</td><td>Selbstdarstellung als Heilsbringer</td><td class="Kat">164</td></tr>
+            <tr class="innen"><td class="Kat">11</td><td>Komplexes Thema --> Einfache Lösung</td><td class="Kat">33</td></tr>
+            <tr class="innen"><td class="Kat">12</td><td>Schwarz-Weiß-Denken</td><td class="Kat">19</td></tr>
+            <tr class="innen"><td class="Kat">13</td><td>Angst- und Wutmache</td><td class="Kat">64</td></tr>
+            <tr class="innen"><td class="Kat">14</td><td>Opferrolle</td><td class="Kat">25</td></tr>
+            <tr class="innen"><td class="Kat">15</td><td>"Wir gegen Die"</td><td class="Kat">67</td></tr>
+            <tr class="innen"><td class="Kat">16</td><td>Aufruf zur Veränderung</td><td class="Kat">95</td></tr>
+            <tr class="innen"><td class="Kat">17</td><td>Herunterspielen und Diskreditieren der Gegner:innen</td><td class="Kat">72</td></tr>
+        </tbody>
+    </table>
+
+    <br></br>
+
+   <script src="load-navbar.js" defer></script>
+<script src="Diagrams.js" defer></script> 
+  
+
+<footer style="text-align: center; padding: 1em; background-color: #F1EFEC; font-size: 0.9em;">
+  <p>&copy; 2025 Studienprojekt: Donald Trump I & II. Alle Rechte vorbehalten.</p>
+  <p>
+    | <a href="Impressum.html">Impressum</a> | 
+  </p>
+  <p><a href="#navbar-container">Zurück zur Navigaton</a></p>
+</footer> 
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+.Gesamt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Zugriff{
+    font-style: italic;
+}
+
+
+.Einleitung {
+    flex: 1;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+
+}
+
+.Kategoriesierung {
+    background-color: #F1EFEC;
+    flex: 1;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
+.Daten {
+    flex: 1;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+}
+
+.Zahl {
+    font-weight: bold;
+}
+
+table{
+    table-layout: auto;
+    width: 40%;
+    margin: auto;
+    border-spacing: 0;
+}
+
+.Kat {
+    text-align: left;
+}
+
+thead {
+    background-color: #960018;
+    color: white;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+.innen:hover {
+    background-color: #F1EFEC;
+}
+
+a {
+    color: #960018;
+}
+

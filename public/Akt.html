@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../navbar.css"/>
+    <link rel="stylesheet" href="../Akt.css"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="../soc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Explora&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="start">
+    <h1>Studienprojekt: Donald Trump</h1>
+</div>
+
+<div id="navbar-container"></div>
+
+<div class="Wer">
+<h2>Ausgewählte Akteure der Trump Regierung II</h2>
+<p>
+  Der Fokus der Analyse liegt auf einer Auswahl von Akteuren aus der zweiten Amtszeit. Aus Gründen der Effizienz wurde der Fokus ausschließlich auf diese Phase gelegt. 
+  In die Analyse einbezogen wurden Elon Musk, JD Vance und das Weiße Haus. <br><br>
+  Die Untersuchung basiert auf der Auswertung von den auf den Plattformen X (vormals Twitter) und Instagram veröffentlichten Inhalten.
+  Im Rahmen der Kategorisierung der Beiträge wurde die eigens entwickelte Populismus-Checkliste herangezogen, die auf der Startseite zur Verfügung steht. Jedem Post wurde zwischen ein bis zwei Kategorien zugeordnet.</p>
+
+  <h2>Ergebnisse</h2>
+  <table>
+        <thead>
+            <tr>
+                <th>Akteur</th>
+                <th>kategorisierte Posts</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="innen"><td>Elon Musk</td><td class="Kat">193</td></tr>
+            <tr class="innen"><td>JD Vance</td><td class="Kat">27</td></tr>
+            <tr class="innen"><td>Das weiße Haus</td><td class="Kat">230</td></tr>
+        </tbody>
+    </table>
+    <br><br>
+    <p>Tipp: Klicken Sie auf eine Kategorie im Diagramm, um die Darstellung anzupassen. (Kategorie ein- oder ausblenden)</p>
+</div>
+
+<div class="Vergleichd" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+  <div class="Diagramm" style="width: 35rem; display: flex; flex-direction: column; align-items: center;">
+    <canvas id="Musk" width="500" height="500" style="max-width:100%;"></canvas>
+    <div>Quelle: Eigens erhoben</div>
+  </div>
+
+  <div class="Diagramm" style="width: 35rem; display: flex; flex-direction: column; align-items: center;">
+    <canvas id="Vance" width="500" height="500" style="max-width:100%;"></canvas>
+    <div>Quelle: Eigens erhoben</div>
+  </div>
+
+  <div class="Diagramm" style="width: 35rem; display: flex; flex-direction: column; align-items: center;">
+    <canvas id="Haus" width="500" height="500" style="max-width:100%;"></canvas>
+    <div>Quelle: Eigens erhoben</div>
+  </div>
+</div>
+
+<br><br>
+<div class="Container">
+  <div class="Musk Ab" id="farbe">
+<h2>Beobachtungen zur Kommunikationsweise von Elon Musk auf der Social Media Plattform X</h2>
+
+<p>
+  Im Zeitraum vom <span>20.01.2025</span> bis zum <span>30.04.2025</span> lassen sich bei Elon Musks Aktivitäten auf X (früher Twitter) klare Muster in seinen Beiträgen erkennen. 
+  Die folgenden Punkte fassen unsere zentralen Beobachtungen zusammen:
+</p>
+    <ol>
+      <li class="Aufzählung">„Make Europe Great Again“ </li>
+      <p>
+        In mehreren Beiträgen verwendet Musk Formulierungen wie „Make Germany Great Again“ oder „Make Europe Great Again“.
+        Diese Aussagen lassen sich politischen Slogans des Rechtspopulismus zuordnen. Oftmals wurde Werbung für Parteien wie die AfD betrieben oder es wurden historische Bezüge zur NS-Zeit hergestellt.
+      </p>
+            <a href="https://x.com/elonmusk/status/1890066251051131044" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 13. Februar 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              AfD is the only hope for Germany
+            </div>
+          </div>
+        </a>
+      <li class="Aufzählung">Vermarktung eigener Produkte</li>
+      <p>
+         Musk nutzt die Plattform regelmäßig, um für seine Unternehmen und Produkte zu werben. Im Mittelpunkt stehen dabei X, Tesla und das KI-Tool Grok. Diese Inhalte sind teils direkt werbend. Andere sind durch Kommentare eingebettet.
+      </p>
+       <li class="Aufzählung">Kritik an der Justiz und an Richtern</li>
+      <p>
+        Musk äußert sich wiederholt äußerst kritisch gegenüber der Arbeit von Gerichten, Richtern und bestehenden Gesetzen.
+      </p>
+      <a href="https://x.com/elonmusk/status/1890173376964313388" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 13. Februar 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              If ANY judge ANYWHERE can stop EVERY Presidential action EVERYWHERE, we do NOT live in a democracy.
+            </div>
+          </div>
+        </a>
+       <li class="Aufzählung">Abwertende Inhalte über politische Gegner</li>
+      <p>
+        Oft werden Memes oder kurze, spöttische Kommentare über politische Gegner geteilt. Diese Beiträge sind meist stark zugespitzt und vereinfachen komplexe politische Sachverhalte erheblich.
+      </p>
+          <a href="https://x.com/elonmusk/status/1884639026813993311" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 29. Jänner 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+             The US radical-left has been using US taxpayer money to fund radical-left political parties & media around the world!
+            </div>
+          </div>
+        </a>
+       <li class="Aufzählung">Unterstützung für Donald Trump</li>
+      <p>
+        Musk teilt regelmäßig Beiträge von Trump aus dessen Plattform „Truth Social“ und kommentiert sie auch. Diese stellen direkt oder indirekt Werbung für Trumps Politik dar.
+      </p>
+          <a href="https://x.com/elonmusk/status/1900587906042892429" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 14. März 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              It was easy to predict. This is their standard playbook. <br><br>
+
+              Look at what they did to President @realDonaldTrump He was loved by democrats until he ran for president. <br>
+              Now they call him Hitler, Mussolini, Stalin, etc and try to kill him.
+            </div>
+          </div>
+        </a>
+       <li class="Aufzählung">Überwiegende Nutzung von Kommentarfunktionen</li>
+      <p>
+        Musk postet vergleichsweise zu anderen Personen (Z.b. Donald Trump) selten eigene Inhalte. Er antwortet überwiegend auf bestehende Beiträge – meist knapp, oft nur mit einem Wort oder einem Emoji.
+      </p>
+       <li class="Aufzählung">Sensibilität für Krititk</li>
+      <p>
+        Auf kritische Reaktionen z.B. zu seinem sogenannten „Herzensgruß“ reagiert Musk oft mit Verweisen auf andere Personen, 
+        die ähnliche Gesten verwendet haben. In Zusammenhänge in Bezug auf Kritik, kommt es wiederholt zu Vergleichen mit historischen Diktaturen. 
+        Dabei kritisiert er insbesondere die Tendenz, politische Gegner vorschnell mit extremistischen Ideologien gleichzusetzen.<br>
+        <ul>
+          <li>„The Democrat strategy really does default to “everyone is Hitler“</li>
+        </ul> 
+        <a href="https://x.com/elonmusk/status/1899862596825575534" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 12. März 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              Ironically, yes. <br>
+              Democrats: “Everyone is Hitler, except Hamas!” 🤣🤣.
+            </div>
+          </div>
+        </a>
+        
+      </p>
+       <li class="Aufzählung">Wiederkehrende thematische Schwerpunkte</li>
+      <p>
+        Zu folgenden Themen äußert sich Musk nahezu täglich: 
+        <ul>
+          <li>Steuergelder („taxpayer“)</li>
+          <ul>
+            <li>“More of your tax dollars saved” </li>
+            <li>“Reducing fraud & waste of your tax dollars by a trillion dollars in 2026 is possible”</li>
+            <li>“Absolutely critical to stop the massive government fraud and waste!"</li>
+          </ul>
+          <li>Verschwendung und Betrug staatlicher Mittel („fraud“, „waste“, „trillions saved“)</li>
+          <li>Geld im Allgemeinen</li>
+          
+          <li>Geschlechterthemen (z. B. Transgender als „mind virus“)</li>
+          <li>Meinungsfreiheit</li>
+          <li>Demokratie, die seiner Meinung nach bedroht sei</li>
+          <ul>
+            <li>„The NGOs are trying to destroy democracy“</li>
+          </ul>
+          <li>Medienkritik („alle lügen“, nur auf X gibt es angeblich die Wahrheit)</li>
+          <li>Starke Ablehnung der Demokraten</li>
+        </ul>
+        <a href="https://x.com/elonmusk/status/1895132217581400260" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 27. Februar 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              The taxpayer savings receipts, including corrections when mistakes are made, are posted on the DOGE website. <br><br>
+              When there are complaints, they should be directed towards specific items, but they just yell “constitutional crisis!” and avoid mention of specific line items.
+            </div>
+          </div>
+        </a>
+        <a href="https://x.com/elonmusk/status/1903811969418686526" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 23. März 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              Not science...
+            </div>
+          </div>
+        </a>
+      </p>
+       <li class="Aufzählung">Heilsbringer-Narrative</li>
+      <p>
+        Musk stellt Personen, die seine Ansichten teilen, insbesondere Donald Trump, als „Retter“ oder Heilsfiguren dar.Er präsentiert regelmäßig andere Personen als Vertreter seiner eigenen Positionen. Oder er stellt politische Alternativen vor, die er als schlecht erachtet.
+      </p>
+      <li class="Aufzählung">Komplexes Thema → Einfache Lösung</li>
+      <p>
+        In mehreren Beiträgen stellt Musk komplexe gesellschaftliche oder politische Probleme dar und bietet zugleich vereinfachte bis hin zu keinen Lösungsvorschlägen.
+      </p>
+    
+      <li class="Aufzählung">Kritik am Ukraine-Krieg und Präsident Selenski</li>
+      <p>
+        In mehreren Tweets wird eine ablehnende Haltung gegenüber dem ukrainischen Präsidenten deutlich.
+      </p>
+        <a href="https://x.com/elonmusk/status/1892613981426102465" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header" >
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 20. Februar 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              Unfortunately, @CommunityNotesis increasingly being gamed by governments & legacy media. <br><br>
+              Working to fix this …<br><br>
+              It should be utterly obvious that a Zelensky-controlled poll about his OWN approval is not credible!!<br><br>
+              If Zelensky was actually loved...
+            </div>
+          </div>
+        </a>
+      <li class="Aufzählung">Inszenierung als „normale Person“</li>
+      <p>
+        Musk stellt sich indirekt als normale Person bzw. als Person des Volkes dar. Er präsentiert einfache, nachvollziehbare Ansichten zu komplizierten Themen und liefert einfache Lösungsvorschläge.
+      </p>
+              <a href="https://x.com/elonmusk/status/1895514980335993144" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card" id="weiß">
+            <div class="tweet-header">
+              <img src="/images/elon-musk-6222396.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>Elon Musk</strong>
+                <span>@elonmusk · 28. Februar 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              <a href="https://x.com/i/status/1895514980335993144">*Exclusice Interview with President Trump and Elon Musk*</a>
+            </div>
+          </div>
+        </a>
+      <li class="Aufzählung">Veränderungen des Postingverhaltens im zeitlichen Verlauf</li>
+      <p>
+        Ab Ende Februar 2025 ist ein signifikanter Rückgang politischer Beiträge zu beobachten. Im April 2025 nahm die politische Aktivität auf X im Vergleich zu den Vormonaten deutlich ab.
+      </p>
+    </ol>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class="Diagramme" style="font-size: 1rem; display: flex; flex-direction: column; align-items: center; height: 43rem;">
+    <canvas id="Musk"></canvas>
+    <div>Quelle: Eigens erhoben</div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+<div>
+<h2>Beobachtungen zur Kommunikationsweise von JD Vance</h2>
+    <p class="Ab">Insgesamt postete James David (JD) Vance vergleichsweise wenig mit 185 Posts in den ersten 100 Tagen Amtszeit, wobei die Anzahl der Posts auch laufend abnahm. Jedoch waren auch bei ihm einige populistische Umgangsformen zu sehen.</p>
+    <div class="Diagramme" style="font-size: 1rem; text-align: right; height: 20rem; margin-left: 40rem;">
+      <canvas id="JDV"></canvas>
+      Quelle: Eigens erhoben
+    </div>
+
+
+ </div>
+ <ol class="Ab">
+      <li class="Aufzählung">"Journalism like this is a disgrace" </li>
+      <p>
+        JD Vance kritisierte die Medien in vielen Beiträgen und beschuldigte sie Lügen zu verbreiten. Thema der "Lügen" waren vor allem Kritik an der Einwanderungspolitik der Regierung.
+        </p>
+<a href="https://x.com/JDVance/status/1884310964797132823" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card">
+            <div class="tweet-header">
+              <img src="/images/vance.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>JD Vance</strong>
+                <span>@JDVance · 28. Jänner 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+              The lies keep coming. The press seems to have an unlimited supply.
+            </div>
+          </div>
+        </a>
+      <li class="Aufzählung">Alles ist besser unter Präsident Trump</li>
+      <p>In vielen Aussagen reagierte JD Vance auf Kritik an den nicht gehaltenen Versprechen der Regierung, mit "Unter Präsident Trump hätte es dieses Problem nie gegeben!". Auch ganz allgemein lobte er die Regierung sehr viel und vor allem die Person Trump.</p>
+
+<a href="https://x.com/JDVance/status/1899188967188394207" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card">
+            <div class="tweet-header">
+              <img src="/images/vance.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>JD Vance</strong>
+                <span>@JDVance · 10. März 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+            President Trump's economic polices are simple: if you invest in and create jobs in America, you'll be rewarded. We'll lower regulations and reduce taxes.
+
+<p>But if you build outside of the United States, you're on your own.</p></a>
+            </div>
+          </div>
+        </a>
+
+<li class="Aufzählung">Kampf gegen RichterInnen wegen "Illegal Alliens"</li>
+      <p>JD Vance berichtete regelmäßig von den Abschiebungen von MigrantInnen und nannte diese dabei "Illegal Alliens". Bekanntlich wurden diese Abschiebungen von RichterInnen unterbunden, welche er darauf online scharf kritisierte und klar machte, dass diese die Entscheidungen der Regierung, welche gewählt wurde, nicht unterbinden dürfen. </p>
+
+<a href="https://x.com/JDVance/status/1899188967188394207" target="_blank" rel="noopener noreferrer" class="tweet-link">
+          <div class="tweet-card">
+            <div class="tweet-header">
+              <img src="/images/vance.jpg" class="tweet-avatar">
+              <div class="tweet-info">
+                <strong>JD Vance</strong>
+                <span>@JDVance · 9. Februar 2025</span>
+              </div>
+            </div>
+            <div class="tweet-body">
+            If a judge tried to tell a general how to conduct a military operation, that would be illegal.
+<p>
+If a judge tried to command the attorney general in how to use her discretion as a prosecutor, that's also illegal.   
+</p>
+<p>
+Judges aren't allowed to control the executive's legitimate power.
+</p>
+</a>
+ </ol>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class="Diagramme" style="font-size: 1rem; display: flex; flex-direction: column; align-items: center; height: 43rem;">
+    <canvas id="Vance"></canvas>
+    <div>Quelle: Eigens erhoben</div>
+  </div>
+</div>
+   
+<div class="Container">
+  <div class="Musk Ab" id="farbe">
+<h2>Beobachtungen zur Kommunikationsweise vom White House
+</h2>
+
+<p>
+  Ebenso von großer Relevanz sind die Kommunikationsstrategien des White House. Hierfür wurde der offizielle Instagram Account des White House inspiziert und dessen Inhalte wiederum in die einzelnen Populismus Kategorien eingeordnet. Im Zeitraum von <span>20. Jänner bis 30. April 2025</span> wurden <span>508 Beiträge</span> veröffentlicht, von welchen wiederum <span>230</span> als populistisch eingeordnet worden sind, dies sind etwa <span>45 Prozent</span>. Man möge betonen, dass es sich hier um den Account einer wichtigen politischen Institution der Vereinigten Staaten handelt.
+  Es wurde deutlich, dass sich einige Themen – und im weiteren Sinne auch die zugehörigen Kategorien – häufig in den Instagram Posts wiederfinden lassen. 
+</p>
+
+    <ol>
+      <li class="Aufzählung">Darstellung des Präsidenten Donald Trump als Heilsbringer für die USA </li>
+      <p>
+        Herausstechend ist, dass Trump auf dem Account des White House fast durchgehend als Problembeseitiger, Retter oder Held präsentiert wird. Meistens wird noch zusätzlich hervorgehoben, dass er als erster Präsident endlich ans Volk denke und die US-Amerikaner:innen vor Bedrohungen von außen schütze. Zudem wird auch häufig auf die Wirtschaft eingegangen und wie sehr diese durch Trump nun blühe bzw. deren Zukunft durch seine Maßnahmen gesichert sei. Meistens wird Donald Trump in heroischer Position auf den Bildern oder in Videos abgelichtet.
+      </p>
+      <a href="https://www.instagram.com/whitehouse/p/DFOTM2-x-K4/?locale=Online%2Bentertainment%2C%2Breal%2Bperson%2C%2Belectronic%2Bchess%2Band%2Bcards%2C%2Blottery%2C%2Bsports%2C%2Bcomprehensive%2Breputation%2B(Telegram%3A%2B%40UUjd888888).lpmz&hl=fr" target="_blank" rel="noopener noreferrer" class="insta-link">
+  <div class="insta-card" id="weiß">
+    <div class="insta-header">
+      <img src="/images/whitehouse1.jpg" class="insta-avatar" alt="Profilbild">
+      <div class="insta-info">
+        <strong>whitehouse</strong>
+        <span>Instagram · 24. Januar 2025</span>
+      </div>
+    </div>
+    <div class="insta-image">
+      <img src="/images/insta1.jpg" alt="Instagram-Post">
+    </div>
+    <div class="insta-caption">
+     President Trump Delivers More in 100 Hours Than Any President in 100 Days 🇺🇸
+    </div>
+  </div>
+</a>
+<br></br>
+    
+      <li class="Aufzählung">Die Trump-Regierung und ihr Einsatz für das einfache Volk</li>
+      <p>
+         Oft setzt die PR des Weißen Hauses auch darauf, den Zugang des Präsidenten und der Regierung zu den Bürger:innen und ihren guten Willen für diese darzustellen. So werden u. a. häufig Executive Orders und Pläne in Posts präsentiert, wodurch man vermutlich die Anhänger:innen glaubend machen möchte, dass die Förderung der Interessen des Volkes von größter Bedeutung sei. Hier stehen weitgehend Arbeiter:innen und Familien bzw. Mütter im Vordergrund. Die Follower werden in den Posts oftmals direkt adressiert, als würde es sich um einen persönlichen Brief bzw. ein direktes Gespräch handeln. Donald Trump oder weitere Regierungsangehörige werden oft bei Gesprächen mit einfachen Bürger:innen gefilmt oder fotografiert. Auffällig ist, dass zu jenen Treffen sofort mehrere Posts, in welchen immer wieder auf dasselbe Thema eingegangen wurde, veröffentlicht worden sind.
+      <a href="https://www.instagram.com/p/DHokTDDx4bN/?locale=fr" target="_blank" rel="noopener noreferrer" class="insta-link">
+  <div class="insta-card" id="weiß">
+    <div class="insta-header">
+      <img src="/images/whitehouse1.jpg" class="insta-avatar" alt="Profilbild">
+      <div class="insta-info">
+        <strong>whitehouse</strong>
+        <span>Instagram · 25. März 2025</span>
+      </div>
+    </div>
+    <div class="insta-image">
+      <img src="/images/insta3.jpg" alt="Instagram-Post">
+    </div>
+    <div class="insta-caption">
+      President Trump celebrates Women’s History Month!
+<p></p>
+“For four long years, we had an administration that tried to abolish the very concept of womanhood and replace it with radical gender ideology...Under the Trump administration, we’re ENDING the Marxist war on women.” - President Trump 🇺🇸
+    </div>
+  </div>
+</a>
+<br></br>
+        </p>
+       <li class="Aufzählung">Minderheiten als Bedrohung für die USA</li>
+      <p>
+        Es wurde deutlich, dass die Trump-Regierung Minderheiten, vor allem Migrantinnen bzw. „Illegal Aliens“ – wie sie auf dem Account auch häufig genannt werden – , als Bedrohung für die amerikanische Gesellschaft darstellt. Dies wird meistens mit unkonventionellen Mitteln versucht. So werden zum einen strafauffällige Migrant:innen mit vollem Namen und „Mugshot“ auf dem Account gepostet, um durch deren Verhaftung den Einsatz der Regierung und der Exekutive zu verdeutlichen. Einzelfälle werden meist genutzt, um eine gesamte Bevölkerungsgruppe schlecht darzustellen. Weiters werden auch fröhlich gestimmte Videos von Abschiebeflügen veröffentlicht. Die Begrifflichkeiten, die im Zusammenhang mit jenen Minderheiten verwendet werden, haben ebenso stark populistischen Charakter, da diese durch die Erzeugung eines gemeinsamen Feindes deutlich zur Spaltung des Volkes verwendet werden (so etwa „Illegal Aliens“).
+      </p>
+      <a href="https://www.instagram.com/p/DHokTDDx4bN/?locale=fr" target="_blank" rel="noopener noreferrer" class="insta-link">
+  <div class="insta-card" id="weiß">
+    <div class="insta-header">
+      <img src="/images/whitehouse1.jpg" class="insta-avatar" alt="Profilbild">
+      <div class="insta-info">
+        <strong>whitehouse</strong>
+        <span>Instagram · 14. Februar 2025</span>
+      </div>
+    </div>
+    <div class="insta-image">
+      <img src="/images/insta2.jpg" alt="Instagram-Post">
+    </div>
+    <div class="insta-caption">
+     Happy Valentine’s Day ♥️
+    </div>
+  </div>
+</a>
+<br></br>
+      
+       <li class="Aufzählung">Zeit für Veränderung</li>
+      <p>
+        In einigen Beiträgen wird Veränderung gefordert oder auf notwendige Änderungen eingegangen, die von der Trump Regierung gefordert und umgesetzt werden. Häufig werden hier zusätzlich die Fehler und der mangelnde Einsatz politischer Gegner:innen betont. In diesem Kontext wird außerdem auf die Durchsetzungsfähigkeit und den Tatendrang der Trump-Regierung sowie die Erreichung gemeinsamer volksorientierter Ziele eingegangen.
+      </p>
+      <br></br>
+      
+       <li class="Aufzählung">Inkompetente und tatenfaule Gegner:innen</li>
+       <p>
+        Nicht nur politische Personen, sondern auch unabhängige Institutionen werden in den Posts des Accounts als lächerlich oder unvermögend präsentiert. Meist geschieht dies durch kleine Bemerkungen oder Bild- und Videomontagen, die jene „Feinde“ in schlechtes Licht rücken lassen. Zudem wird in den Captions ein scheinbar ironischer oder lustiger Ton verwendet. Weiters wird häufig behauptet, dass jene Gegner:innen nicht im Sinne des Volkes bzw. der USA handeln würden und nur ihre eigenen Interessen vertreten würden. Das Schwarz-Weiß-Denken spiegelt sich in diesen Beiträgen meist auch wieder.
+      </p>
+      <a href="https://www.instagram.com/p/DHokTDDx4bN/?locale=fr" target="_blank" rel="noopener noreferrer" class="insta-link">
+  <div class="insta-card" id="weiß">
+    <div class="insta-header">
+      <img src="/images/whitehouse1.jpg" class="insta-avatar" alt="Profilbild">
+      <div class="insta-info">
+        <strong>whitehouse</strong>
+        <span>Instagram · 21. April 2025</span>
+      </div>
+    </div>
+    <div class="insta-image">
+      <img src="/images/insta4.jpg" alt="Instagram-Post">
+    </div>
+    <div class="insta-caption">
+     It turned out that all we really needed was a new President.
+    </div>
+  </div>
+</a>
+    </ol>
+<p>
+  Allgemein ist festzustellen, dass der offizielle White House Account in seinen Posts ebenso stark auf emotionale Aufladung und einen vertrauten Umgangstun setzt, wie es Donald Trump in seinen eigenen Beiträgen macht. Häufig werden Auszüge aus den Nachrichten – welche fast ausschließlich von FOX News veröffentlicht worden sind – verwendet, um eine gewisse Seriosität des Accounts zu inszenieren. Jene Seriosität könnte aufgrund der häufig zutreffenden Populismus-Merkmale durchaus hinterfragt werden.
+</p>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class="Diagramme" style="font-size: 1rem; display: flex; flex-direction: column; align-items: center; height: 43rem;">
+    <canvas id="Haus"></canvas>
+    <div>Quelle: Eigens erhoben</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+ <script src="load-navbar.js" defer></script>
+<footer style="text-align: center; padding: 1em; background-color: white; font-size: 0.9em;">
+  <p>&copy; 2025 Studienprojekt: Donald Trump I & II. Alle Rechte vorbehalten.</p>
+  <p>
+    | <a href="Impressum.html">Impressum</a> | 
+    
+  </p>
+  <p><a href="#navbar-container">Zurück zur Navigaton</a></p>
+</footer> 
+    <script src="Diagrams.js" defer></script>  
+</body>
+</html>
