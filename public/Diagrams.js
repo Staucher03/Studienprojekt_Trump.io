@@ -959,8 +959,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
 //Endergebnis Vergleich Posts
+// postsBarChart.js – Säulendiagramm „Posts pro Account“
+// Erstellt am: 25 Juni 2025
+// Dieses Skript kann zusammen mit weiteren Diagrammen in derselben Datei verwendet werden.
+// Es setzt voraus, dass Chart.js (v3 oder neuer) im Dokument eingebunden ist.
+
+/*
+┌──────────────────────────────────────────────────────────────┐
+│  Canvas‑Element im HTML: <canvas id="posts-bar-chart"></canvas> │
+└──────────────────────────────────────────────────────────────┘
+*/
+
 document.addEventListener('DOMContentLoaded', () => {
   const cvs = document.getElementById('posts-bar-chart');
   if (!cvs) {
@@ -1020,3 +1030,119 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+//Timeline Likes
+const ctx = document.getElementById('timelineChart').getContext('2d');
+
+const labels = [
+  'Juli', 'August', 'September', 'Oktober', 'November',
+  '', // Lücke zwischen Amtszeiten
+  'Jänner', 'Februar', 'März', 'April'
+];
+
+const ersteAmtszeit = [
+  39448.27586,
+  34046.51163,
+  31272.72727,
+  29673.46939,
+  65944.44444,
+  null,
+  133317.0732,
+  112144.7368,
+  79347.22222,
+  63655.17241
+];
+
+const zweiteAmtszeit = [
+  55603.57143,
+  19268.85246,
+  21346.30435,
+  19038.88889,
+  30500,
+  null,
+  180249.0946,
+  109799.929,
+  62315.00465,
+  53465.44348
+];
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: labels,
+    datasets: [
+      {
+        label: 'Erste Amtszeit',
+        data: ersteAmtszeit,
+        borderColor: 'blue',
+        backgroundColor: 'rgba(0,0,255,0.1)',
+        tension: 0.3,
+        spanGaps: false
+      },
+      {
+        label: 'Zweite Amtszeit',
+        data: zweiteAmtszeit,
+        borderColor: 'red',
+        backgroundColor: 'rgba(255,0,0,0.1)',
+        tension: 0.3,
+        spanGaps: false
+      }
+    ]
+  },
+// Im Chart-Options-Block ergänzen
+options: {
+  responsive: true,
+  interaction: {
+    mode: 'nearest',
+    axis: 'x',
+    intersect: false
+  },
+  plugins: {
+    title: {
+      display: true,
+      text: 'Verlauf ØLikes/ kategorisierten Posts im Monat'
+    },
+    legend: {
+      position: 'top'
+    },
+    tooltip: {
+      callbacks: {
+        label: function(context) {
+          let value = context.parsed.y;
+          return `${context.dataset.label}: ${value.toLocaleString('de-DE')} Likes`;
+        }
+      }
+    },
+    zoom: {
+      pan: {
+        enabled: true,
+        mode: 'x',
+      },
+      zoom: {
+        wheel: {
+          enabled: true
+        },
+        pinch: {
+          enabled: true
+        },
+        mode: 'x',
+      }
+    }
+  },
+  scales: {
+    y: {
+      title: {
+        display: true,
+        text: 'Durchschnittliche Like/Post'
+      }
+    },
+    x: {
+      title: {
+        display: true,
+        text: 'Zeitraum'
+      }
+    }
+  }
+}}
+);
+
