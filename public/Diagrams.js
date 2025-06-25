@@ -369,7 +369,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
   const data = [0, 59, 8, 8, 2, 7, 16, 6, 111, 158, 29, 9, 17, 9, 19, 40, 32];
 
-  const threshold = 32;
+  const threshold = 29;
   let othersSum = 0;
   const filteredItems = [];
 
