@@ -1087,10 +1087,13 @@ options: {
     intersect: false
   },
   plugins: {
-    title: {
-      display: true,
-      text: 'Verlauf ØLikes/ kategorisierten Posts im Monat'
-    },
+title: {
+  display: true,
+  text: 'Verlauf ØLikes/ kategorisierten Posts im Monat',
+  font: {
+    size: 20  // z. B. 20px – passe nach Wunsch an
+  }
+},
     legend: {
       position: 'top'
     },
