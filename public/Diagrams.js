@@ -1000,7 +1000,7 @@ document.addEventListener('DOMContentLoaded', () => {
       plugins: {
         title: {
           display: true,
-          text: 'Posts pro Account (20.01.2025-30.04.2025)',
+          text: 'Markierte Posts pro Account (20.01.2025-30.04.2025)',
           font: { size: 18 }
         },
         tooltip: {
@@ -1125,7 +1125,7 @@ title: {
     y: {
       title: {
         display: true,
-        text: 'Durchschnittliche Like/Post'
+        text: 'Ø Like/Post'
       }
     },
     x: {
