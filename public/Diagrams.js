@@ -958,3 +958,65 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error("Canvas 'Haus' nicht gefunden");
   }
 });
+
+
+//Endergebnis Vergleich Posts
+document.addEventListener('DOMContentLoaded', () => {
+  const cvs = document.getElementById('posts-bar-chart');
+  if (!cvs) {
+    console.error("Canvas 'posts-bar-chart' nicht gefunden!");
+    return;
+  }
+
+  const ctx = cvs.getContext('2d');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Trump', 'Musk', 'JD Vance', 'Weißes Haus'],
+      datasets: [{
+        label: 'Anzahl der Posts',
+        data: [702, 193, 27, 230],
+        backgroundColor: [
+          '#B22234', // Flag‑Rot
+          '#3C3B6E', // Flag‑Blau
+          '#FFFFFF', // Weiß – erhält graue Umrandung
+          '#B22234'  // Flag‑Rot
+        ],
+        borderColor: [
+          '#B22234',
+          '#3C3B6E',
+          '#A9A9A9', // Kontrast für weiße Säule
+          '#1E90FF'  // Akzentblau für Variation
+        ],
+        borderWidth: 1,
+        hoverBackgroundColor: [
+          '#FF4C4C', '#5A5ACD', '#EEEEEE', '#4682B4'
+        ]
+      }]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        title: {
+          display: true,
+          text: 'Posts pro Account',
+          font: { size: 18 }
+        },
+        tooltip: {
+          enabled: true,
+          callbacks: {
+            label: ctx => `${ctx.label}: ${ctx.parsed.y} Posts`
+          }
+        },
+        legend: { display: false }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: { display: true, text: 'Posts' }
+        }
+      }
+    }
+  });
