@@ -876,14 +876,12 @@ document.addEventListener('DOMContentLoaded', () => {
     'Opferrolle','"Wir gegen Die"','Aufruf zur Veränderung'
   ];
   const rawData   = [4,2,2,9,5,9,9,20,1];
-  const rawColors = [
-           '#8B0000', // Dunkelrot (Burgundy)
+  const rawColors = [        '#8B0000', // Dunkelrot (Burgundy)
     '#B22234', // Dunkelrot
     
     '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
-    '#A9A9A9', // für "Others"
-
-
+    '#A9A9A9', '#6495ED', '#DC143C', '#00008B', '#B03060', '#4682B4',
+    '#FF6347', '#0000CD', '#C71585', '#7B68EE', '#778899'
   ];
 
   const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
@@ -933,12 +931,12 @@ document.addEventListener('DOMContentLoaded', () => {
     'Herunterspielen und Diskreditieren der Gegner:innen'
   ];
   const rawData = [59,8,8,2,7,16,6,111,158,29,9,17,9,19,40,32];
-  const rawColors = [
-           '#8B0000', // Dunkelrot (Burgundy)
+  const rawColors = [        '#8B0000', // Dunkelrot (Burgundy)
     '#B22234', // Dunkelrot
     
     '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
-    '#A9A9A9', // für "Others"
+    '#A9A9A9', '#6495ED', '#DC143C', '#00008B', '#B03060', '#4682B4',
+    '#FF6347', '#0000CD', '#C71585', '#7B68EE', '#778899'
   
   ];
 
