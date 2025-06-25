@@ -881,7 +881,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '#B22234', // Dunkelrot
     
     '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
-    '#A9A9A9' // für "Others"
+    '#A9A9A9', // für "Others"
 
     '#8B0000','#B22234'
   ];
@@ -938,7 +938,7 @@ document.addEventListener('DOMContentLoaded', () => {
     '#B22234', // Dunkelrot
     
     '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
-    '#A9A9A9' // für "Others"
+    '#A9A9A9', // für "Others"
   
     '#8B0000','#B22222','#FF4500','#DC143C','#C71585',
     '#8A2BE2','#5A5ACD','#1E90FF','#4682B4'
