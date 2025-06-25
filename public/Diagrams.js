@@ -877,8 +877,12 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
   const rawData   = [4,2,2,9,5,9,9,20,1];
   const rawColors = [
-    '#8B0000','#B22234','#FF4C4C','#3C3B6E','#5A5ACD',
-    '#1E90FF','#A9A9A9','#6495ED','#DC143C'
+       '#8B0000', // Dunkelrot (Burgundy)
+    '#B22234', // Dunkelrot
+    
+    '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
+    '#A9A9A9' // für "Others"
+  
   ];
 
   const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
@@ -929,9 +933,11 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
   const rawData = [59,8,8,2,7,16,6,111,158,29,9,17,9,19,40,32];
   const rawColors = [
-    '#8B0000','#B22222','#FF4500','#DC143C','#C71585',
-    '#8A2BE2','#5A5ACD','#1E90FF','#4682B4','#00CED1',
-    '#3CB371','#6B8E23','#FFD700','#FFA500','#FF69B4','#A9A9A9'
+       '#8B0000', // Dunkelrot (Burgundy)
+    '#B22234', // Dunkelrot
+    
+    '#FF4C4C',  '#3C3B6E', '#5A5ACD', '#1E90FF',
+    '#A9A9A9' // für "Others"
   ];
 
   const { labels, data, colors } = getTop6PlusOthers(rawLabels, rawData, rawColors);
