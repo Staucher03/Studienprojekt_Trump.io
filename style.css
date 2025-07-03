@@ -187,6 +187,7 @@ canvas {
 .ziel-text{
   margin-top: 3rem;
   text-align: left;
+  font-size: 95%;
 }
 .ziel-container {
   display: flex;
